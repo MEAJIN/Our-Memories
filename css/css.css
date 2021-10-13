@@ -124,13 +124,13 @@ header .search-form label {
   font-size: 20px;
   padding-right: 35px;
   cursor: pointer;
-  background: #ffffff url("search10.png") 0 0 no-repeat;
+  background: #ffffff url("../icon/search10.png") 0 0 no-repeat;
   height: 24px;
   width: 24px;
 }
 
 header .search-form label:hover {
-  background: #ffffff url("search10-g.png") 0 0 no-repeat;
+  background: #ffffff url("../icon/search10-g.png") 0 0 no-repeat;
   height: 24px;
   width: 24px;
 }
@@ -228,47 +228,47 @@ header .login-form p a {
 }
 
 .carousel-item.item1 {
-  background-image: url('carousel1.jpg');
+  background-image: url('../img/carousel1.jpg');
   background-position: left center;
 }
 
 .carousel-item.item2 {
-  background-image: url('carousel2.jpg');
+  background-image: url('../img/carousel2.jpg');
   background-position: center bottom;
 }
 
 .carousel-item.item3 {
-  background-image: url('carousel3.jpg');
+  background-image: url('../img/carousel3.jpg');
   background-position: bottom center;
 }
 
 .carousel-item.item4 {
-  background-image: url('carousel4.jpg');
+  background-image: url('../img/carousel4.jpg');
   background-position: top center;
 }
 
 .carousel-item.item5 {
-  background-image: url('carousel5.jpg');
+  background-image: url('../img/carousel5.jpg');
   background-position: top center;
 }
 
 .carousel-item.item6 {
-  background-image: url('carousel6.jpg');
+  background-image: url('../img/carousel6.jpg');
   background-position: center center;
 }
 
 .carousel-item.item7 {
-  background-image: url('carousel7.jpg');
+  background-image: url('../img/carousel7.jpg');
   background-position: center center;
 }
 
 .carousel-item.item8 {
-  background-image: url('carousel8.jpg');
+  background-image: url('../img/carousel8.jpg');
   background-position: bottom center;
 }
 
 .carousel-item.item9 {
-  background-image: url('carousel9.jpg');
+  background-image: url('../img/carousel9.jpg');
   background-position: center center;
 }
 
@@ -396,39 +396,39 @@ p {
 /*  our-hover */
 
 .container .card-bg:hover {
-  background-image: url('profile-bg.jpg');
+  background-image: url('../img/profile-bg.jpg');
 }
 
 .container .card-bg2:hover {
-  background-image: url('profile-bg2.jpg');
+  background-image: url('../img/profile-bg2.jpg');
 }
 
 .container .card-bg3:hover {
-  background-image: url('profile-bg3.png');
+  background-image: url('../img/profile-bg3.png');
 }
 
 .container .card-bg4:hover {
-  background-image: url('profile-bg4.jpg');
+  background-image: url('../img/profile-bg4.jpg');
 }
 
 .container .card-bg5:hover {
-  background-image: url('profile-bg5.png');
+  background-image: url('../img/profile-bg5.png');
 }
 
 .container .card-bg6:hover {
-  background-image: url('profile-bg6.jpg');
+  background-image: url('../img/profile-bg6.jpg');
 }
 
 .container .card-bg7:hover {
-  background-image: url('profile-bg7.jpg');
+  background-image: url('../img/profile-bg7.jpg');
 }
 
 .container .card-bg8:hover {
-  background-image: url('profile-bg8.jpg');
+  background-image: url('../img/profile-bg8.jpg');
 }
 
 .container .card-bg9:hover {
-  background-image: url('profile-bg9.jpg');
+  background-image: url('../img/profile-bg9.jpg');
 }
 
 .container .card:hover {
@@ -509,22 +509,22 @@ p {
 }
 
 .container .post-box .post-img1 {
-  background-image: url('carousel1.jpg');
+  background-image: url('../img/carousel1.jpg');
   background-position: left center;
 }
 
 .container .post-box .post-img2 {
-  background-image: url('carousel2.jpg');
+  background-image: url('../img/carousel2.jpg');
   background-position: bottom center;
 }
 
 .container .post-box .post-img3 {
-  background-image: url('carousel3.jpg');
+  background-image: url('../img/carousel3.jpg');
   background-position: center center;
 }
 
 .container .post-box .post-img4 {
-  background-image: url('carousel4.jpg');
+  background-image: url('../img/carousel4.jpg');
   background-position: center center;
 }
 
