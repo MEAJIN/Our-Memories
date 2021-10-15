@@ -4,27 +4,82 @@
 
 <br />
 
-### Our Memories 주소
+### 🔗 Our Memories 주소
 - https://meajin.github.io/Our-Memories/
 - 최상단 이미지를 클릭하셔도 홈페이지로 이동됩니다.
 
 <br />
 
-## 🛠 기술 스택
+## 📂 파일 구조
 
-- HTML
+📂:.
+│  index.html
+│
+├─css
+│      css.css
+│
+├─font
+│      폰트 모음
+│
+├─icon
+│      아이콘 모음
+│
+├─img
+│      이미지 모음
+│
+└─js
+        script.js
 
-## ❓ 토이프로젝트 수행 이유
+<br />
+
+## ❓ 토이프로젝트 수행 이유 및 목적
 
 - HTML/CSS 복습
   - [Web-Study](https://github.com/MEAJIN/Web-Study)에 기재 되어 있는 기술 기반
 
 - 역량 확인
-  ✔ 문제해결능력
-  ✔ 구현력
-  ✔ 학습능력
-  ✔ 자기주도 능력/탐구력 
+  - ✔ 문제해결능력
+  - ✔ 구현력
+  - ✔ 학습능력
+  - ✔ 자기주도 능력/탐구력 
 
 - 직접 구현한 서비스를 사람들과 함께 나눠보고 싶어서
 
 - 포트폴리오 제작
+
+<br />
+
+## 🛠 기술 스택
+
+- `HTML5`
+- `CSS3`
+- `JS`
+- `Bootstrap v5.1`
+- `AOS` (Animate on scroll)
+
+<br />
+
+## 🔠 코딩 스타일
+
+- 괄호의 위치
+  - K&R
+
+- 명칭 작성
+  - CSS3 : 파스칼표기법
+  - JS : 카멜표기법
+  - CLASS : 스네이크표기법
+
+- VScode Formater
+  - Beautify
+
+<br />
+
+## 🔎 Our Memories 살펴보기
+
+> ### Home
+`Bootstrap`에서 제공하는 `carousel`을 사용하여 이미지 및 텍스트 슬라이드쇼 기능을 넣었습니다.
+
+![메인](https://user-images.githubusercontent.com/75716255/137470370-a31e8aef-ea97-4306-821e-b2cc18819ba1.gif)
+
+
+-- 작성중
