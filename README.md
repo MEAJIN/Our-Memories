@@ -69,7 +69,7 @@
 - 명칭 작성
   - CSS3 : 파스칼표기법
   - JS : 카멜표기법
-  - CLASS : 스네이크표기법
+  - Class : 스네이크표기법
 
 - VScode Formater
   - Beautify
@@ -78,10 +78,11 @@
 
 ## 🔎 Our Memories 살펴보기
 
+<br />
+
 > ### Home
-`Bootstrap`에서 제공하는 `carousel`을 사용하여 이미지 및 텍스트 슬라이드쇼 기능을 넣었습니다.
+`Bootstrap`에서 제공하는 [`carousel`](https://getbootstrap.com/docs/4.4/components/carousel/)을 사용하여 이미지 및 텍스트 슬라이드쇼 기능을 넣었습니다.
 
-![메인](https://user-images.githubusercontent.com/75716255/137470370-a31e8aef-ea97-4306-821e-b2cc18819ba1.gif)
-
+<img src="https://user-images.githubusercontent.com/75716255/137490549-a1d3a3e1-5edf-49a1-bd5f-fbbad30d91bd.gif" width="100%">
 
 -- 작성중
