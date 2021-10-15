@@ -89,11 +89,11 @@
 
 > ### Carousel
 
-<img src="https://user-images.githubusercontent.com/75716255/137490549-a1d3a3e1-5edf-49a1-bd5f-fbbad30d91bd.gif" width="100%">
-
 <br />
 
 메뉴의 'Home' 항목은 `Bootstrap`에서 제공하는 [`Carousel`](https://getbootstrap.com/docs/4.4/components/carousel/)을 사용하여 이미지 및 텍스트 슬라이드쇼 기능을 넣었습니다. `Carousel`은 모든 사용자를 포함하여 가장 최근에 등록 된 5개의 게시글 정보(제목, 부제목, 메인 이미지)를 불러와 메인 화면에 띄워주며, 클릭하면 해당 게시글로 이동합니다. (현재 9개의 `Carousel`이 임시로 구성되어 있으며, 이는 JS 학습 후 앞에서 제시한 기능을 구현함과 동시에 5개로 간추릴 예정입니다.)
+
+<img src="https://user-images.githubusercontent.com/75716255/137490549-a1d3a3e1-5edf-49a1-bd5f-fbbad30d91bd.gif" width="100%">
 
 <br />
 
@@ -110,11 +110,13 @@
 
 > ### Card(profile)
 
-<img scr="https://user-images.githubusercontent.com/75716255/137509705-7b7479ac-e349-4aaa-b082-5a750495ea57.gif" width="100%">
-
 <br />
 
 메뉴의 'Our' 항목은 저와 제 친구들을 소개하는 프로필 카드로 구성되어 있습니다. 기본 형태는 프로필 사진만 보이도록 되어 있으나, `:hover` 효과를 사용하여 오버 시 프로필 카드에 해당하는 사람에 대한 정보가 보여지도록 구성하였습니다. `:hover` 효과를 통해 보여지는 정보는 프로필 사진, 생년월일, 이름, 직업, 개인 사이트(깃, 블로그, 인스타그램)가 있습니다. 또한, 각 카드에 자신만의 포인트를 주기 위해 직업과 관련된 이미지를 카드 배경으로 지정해주었습니다.
+
+<img src="https://user-images.githubusercontent.com/75716255/137509705-7b7479ac-e349-4aaa-b082-5a750495ea57.gif" width="100%">
+
+<br />
 
 ```css
 
@@ -209,12 +211,12 @@
 <br />
 
 > ### Post
-
-<img src="https://user-images.githubusercontent.com/75716255/137522592-ac722638-8a04-4963-a78c-e8daecd93f76.gif" width="100%">
-
+> 
 <br />
 
 메뉴의 'Memories' 항목은 `Carousel`과 마찬가지로 모든 사용자를 포함하여 가장 최근에 등록 된 5개의 게시글 리스트가 나열되며, 리스트를 클릭하면 해당 게시글로 이동됩니다. (현재 4개의 리스트가 임시로 구성되어 있으며 이는 JS 학습 후 앞에서 제시한 기능을 구현함과 동시에 5개로 간추릴 예정입니다.)
+
+<img src="https://user-images.githubusercontent.com/75716255/137522592-ac722638-8a04-4963-a78c-e8daecd93f76.gif" width="100%">
 
 <br />
 
@@ -263,11 +265,14 @@
 
 > ### Post Record Box
 
-<img src="https://user-images.githubusercontent.com/75716255/137509718-90f4fd18-48f9-4056-84f0-36fffce66c5e.gif" width="100%">
-
 <br />
 
 메뉴의 'Record' 항목은 게시글을 작성 할 수 있도록 `form`을 사용하여 구현하였습니다. 사용된 태그는 `input`, `textarea` 입니다. 제목, 부제목, 내용 중 단 하나라도 입력 한 값이 없으면 등록 버튼의 `submit`이 요청되지 않도록 위의 세 항목에 `required` 값을 주었습니다. 또한, 게시글 작성 중 특정 상황을 대비하여 게시글 초기화 버튼을 같이 구현해 놓았습니다. 초기화 버튼과 등록 버튼은 클릭 직전의 순간 까지 서로 헷갈리지 않게끔 하기 위해 `:hover` 효과를 사용하여 마우스 오버 시 초기화 버튼은 '붉은색'으로, 등록 버튼은 '녹색'으로 변하는 효과를 주었습니다.
+
+
+<img src="https://user-images.githubusercontent.com/75716255/137509718-90f4fd18-48f9-4056-84f0-36fffce66c5e.gif" width="100%">
+
+<br />
 
 ```html
 
@@ -304,20 +309,18 @@
 
 ## @media
 
+<br />
+
+Our Memories는 `@media` 기능을 사용하여 반응형 웹으로 구현하였습니다. 따라서 사용하는 기기에 적합한 환경을 제공해줍니다.
 
 <img sec="https://user-images.githubusercontent.com/75716255/137527687-a8941918-3c98-4044-a27c-ad8716c57476.gif" width="100%">
 
 <br />
 
-Our Memories는 `@media` 기능을 사용하여 반응형 웹으로 구현하였습니다. 따라서 사용하는 기기에 적합한 환경을 제공해줍니다.
-
-<br />
+또한, 모바일 환경을 위해 메뉴바를 아이콘 형태로 제작하여 사용에 불편함이 없도록 하였습니다.
 
 <img src="https://user-images.githubusercontent.com/75716255/137526984-cf56cdcd-740d-4547-a643-9815543290ff.gif" width="100%">
 
-<br />
-
-또한, 모바일 환경을 위해 메뉴바를 아이콘 형태로 제작하여 사용에 불편함이 없도록 하였습니다.
 
 ```css
 
