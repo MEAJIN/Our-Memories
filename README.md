@@ -99,16 +99,19 @@
 
 <img src="https://user-images.githubusercontent.com/75716255/137490549-a1d3a3e1-5edf-49a1-bd5f-fbbad30d91bd.gif" width="100%">
 
-- `Bootstrap`에서 제공하는 [`Carousel`](https://getbootstrap.com/docs/4.4/components/carousel/) 사용
-
-- `Carousel`은 모든 사용자를 포함하여 가장 최근에 등록 된 5개의 게시글 정보를 가져옴 (⭐추후 구현 예정)
-
 <br />
 
-<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137599135-759f5f6f-4131-4057-90e3-a853059dd75b.png" width="20%"></p>
+- `Bootstrap`에서 제공하는 [`Carousel`](https://getbootstrap.com/docs/4.4/components/carousel/) 사용
 
 - Carousel 클릭 시 해당 게시글로 이동
 
+- `Carousel`은 모든 사용자를 포함하여 가장 최근에 등록 된 5개의 게시글 정보를 가져옴 (⭐추후 구현 예정)
+
+
+
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137599135-759f5f6f-4131-4057-90e3-a853059dd75b.png" width="15%"></p>
+
+<br />
 
 ```css
 .carousel-item {
@@ -117,6 +120,7 @@
   }
 ```
 - `Carousel`은 '추억들(memories)' 이라는 주제를 가장 잘 나타내 주는 `요소(element)` 이기 때문에 가시성에 초점을 두는 방향으로 진행함
+
   - 전체화면으로 구성
     - `viewport`의 `height`와 `width` 값에 근거하여 측정되는 단위인 `vh`와 `vw` 를 사용
     -  `퍼센트(%)`를 사용하게 되면 가장 가까운 부모 요소에 상대 적인 영향을 받기 때문에 사용하지 않음
