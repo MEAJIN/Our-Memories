@@ -95,8 +95,6 @@
 
 > ### Carousel
 
-<br />
-
 - `Bootstrap`에서 제공하는 [`Carousel`](https://getbootstrap.com/docs/4.4/components/carousel/) 사용
 
 - `Carousel`은 모든 사용자를 포함하여 가장 최근에 등록 된 5개의 게시글 정보를 가져옴
