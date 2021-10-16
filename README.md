@@ -324,7 +324,7 @@
 
 네비게이션바의 Search 항목은 찾고자 하는 컨텐츠의 키워드를 입력 시 관련 컨텐츠를 리스트로 출력해줍니다(⭐추후 구현 예정). 검색이라는 주제에 맞게 돋보기 아이콘을 사용하였고, `scale`을 사용하여 마우스 오버 시 아이콘이 확대 되는 효과를 주었습니다. 또한, 검색창이 활성화 된 상태일 경우 검색창 내부의 돋보기 아이콘에 마우스 오버시 녹색으로 변하는 효과를 주었습니다. 마지막으로 검색창의 `input` 태그에 `placeholder` 속성을 주어 필드에 사용자가 적절한 값을 입력 할 수 있도록 도움말을 명시하였습니다.
 
-<img src="https://user-images.githubusercontent.com/75716255/137592230-8f400839-46cf-4f1e-b4e3-8925d0fb603d.gif" width="100%">
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137592230-8f400839-46cf-4f1e-b4e3-8925d0fb603d.gif" width="50%"></p>
 
 ```html
 
@@ -395,7 +395,7 @@ window.click = () => {
 
 네비게이션바의 Login 항목은 로그인, 로그아웃, 비밀번호 찾기, 회원가입 기능을 제공합니다(⭐추후 구현 예정). 로그인 아이콘은 대중적으로 많이 사용되고 있는 사람 형태의 아이콘을 사용하였습니다. 이는 검색 버튼과 마찬가지로 `scale`을 사용하여 마우스 오버 시 아이콘이 확대 되는 효과를 주었습니다. 아이디 입력은 이메일 형식만 가능하며, 올바른 이메일 형식이 아닐경우 경고 메세지가 출력되어 올바른 이메일 형식 입력을 유도합니다. 또한, `input` 태그에 `placeholder` 속성을 주어 필드에 사용자가 적절한 값을 입력 할 수 있도록 도움말을 명시하였습니다.
 
-<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137592534-77692a66-da77-4628-ab39-c3cd9f6206ec.gif" width="50%"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137592534-77692a66-da77-4628-ab39-c3cd9f6206ec.gif" width="40%"></p>
 
 ```html
 
