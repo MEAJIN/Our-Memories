@@ -586,7 +586,7 @@ window.click = () => {
 
 <br />
 
-<img src="https://user-images.githubusercontent.com/75716255/137592404-88f5fbb8-24d1-4a57-ac63-c6be9afb0fcc.gif" width="100%">
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137592404-88f5fbb8-24d1-4a57-ac63-c6be9afb0fcc.gif" width="85%"></p>
 
 <br />
 
@@ -596,7 +596,7 @@ window.click = () => {
 
 <br />
 
-<img src="https://user-images.githubusercontent.com/75716255/137526984-cf56cdcd-740d-4547-a643-9815543290ff.gif" width="100%">
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137526984-cf56cdcd-740d-4547-a643-9815543290ff.gif" width="50%"></p>
 
 <br />
 
