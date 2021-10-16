@@ -98,7 +98,9 @@
 <br />
 
 네비게이션바의 'Home' 항목은 `Bootstrap`에서 제공하는 [`Carousel`](https://getbootstrap.com/docs/4.4/components/carousel/)을 사용하여 이미지 및 텍스트 슬라이드쇼 기능을 넣었습니다.
+
 `Carousel`은 모든 사용자를 포함하여 가장 최근에 등록 된 5개의 게시글 정보(제목, 부제목, 메인 이미지)를 불러와 메인 화면에 띄워주며, 클릭하면 해당 게시글로 이동합니다. 
+
 (JS 학습 후 앞에서 제시한 기능을 구현함과 동시에 5개로 간추릴 예정입니다.) (⭐추후 구현 예정)
 
 <img src="https://user-images.githubusercontent.com/75716255/137490549-a1d3a3e1-5edf-49a1-bd5f-fbbad30d91bd.gif" width="100%">
