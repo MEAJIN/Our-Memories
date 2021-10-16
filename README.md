@@ -245,7 +245,7 @@
 
 <br />
 
-'More▶' 버튼의 경우 시각적인 재미를 주기위해 `animation`을 사용하여 역동적인 효과를 주었습니다. 또한, 가장 최근에 등록 된 5개의 게시글 리스트(현재는 4개의 임시 리스트)만 메인에 노출되도록 해놨기 때문에 리스트 우측 하단에 위치한 'More▶' 버튼을 클릭하면 게시판으로 이동하여 모든 게시글을 볼 수 있도록 하며, 게시글 또한 작성 할 수 있게끔 구현하려고 합니다. (⭐추후 구현 예정)
+리스트 우측 하단에 위치한 'More▶' 버튼의 경우 시각적인 재미를 주기위해 `animation`을 사용하여 역동적인 효과를 주었습니다. 또한, 가장 최근에 등록 된 5개의 게시글 리스트(현재는 4개의 임시 리스트)만 메인에 노출되도록 해놨기 때문에 'More▶' 버튼을 클릭하면 게시판으로 이동하여 모든 게시글을 볼 수 있도록 하며, 게시글 또한 작성 할 수 있게끔 구현하려고 합니다. (⭐추후 구현 예정)
 
 ```css
 
@@ -283,8 +283,6 @@
 
 
 <img src="https://user-images.githubusercontent.com/75716255/137509718-90f4fd18-48f9-4056-84f0-36fffce66c5e.gif" width="100%">
-
-<br />
 
 ```html
 
@@ -325,43 +323,52 @@
 
 Our Memories는 `@media` 기능을 사용하여 반응형 웹으로 구현하였습니다. 따라서 사용하는 기기에 적합한 환경을 제공해줍니다.
 
-<img src="https://user-images.githubusercontent.com/75716255/137527687-a8941918-3c98-4044-a27c-ad8716c57476.gif" width="100%">
+<img src="https://user-images.githubusercontent.com/75716255/137592404-88f5fbb8-24d1-4a57-ac63-c6be9afb0fcc.gif" width="100%">
 
 <br />
 
-또한, 모바일 환경을 위해 메뉴바를 아이콘 형태로 제작하여 사용에 불편함이 없도록 하였습니다.
+또한, 모바일 환경을 위해 네비게이션바는 메뉴 모양의 버튼 형태로 제작하여 이용에 불편함이 없도록 하였습니다. (단, 메뉴 버튼이 나오는 해상도는 최대 `768px`로 지정)
 
 <img src="https://user-images.githubusercontent.com/75716255/137526984-cf56cdcd-740d-4547-a643-9815543290ff.gif" width="100%">
 
+<br />
+
+메뉴 버튼의 경우 `onclick` 속성을 사용하여 메뉴를 접고 펼칠 수 있도록 구현하였습니다. 따라서, 자바스크립트의 `toggle()`메서드를 사용하였고 변수는 재사용이 필요 없기 때문에 `const`로 선언하였습니다. 메뉴 버튼이 활성화 되어 있는 동안은 다른 클래스와 동작이 겹치지 않도록 `remove()` 메서드를 사용하여 메뉴 버튼 이외의 클래스는 값을 제거해주었습니다. 또한, 자바스크립트로는 단순히 메뉴를 접고 펼치는 기능만 구현이 가능 하기 때문에 CSS3의 `transition`을 사용하여 부드러운 애니메이션 효과를 주었습니다.
 
 ```css
 
-@media (max-width: 1400px) {
-  .container .post-box .post-img-hw {
-    width: 100%;
-  }
+header .navbar.active {
+  right: 7px;
+  transition: .2s linear;
+}
+```
 
-  .container .post-box .post-info-box {
-    width: 100%;
-  }
+```js
 
-  .container .more-box {
-    width: 100%;
-  }
+//menu-btn
+let navbar = document.querySelector('.navbar');
+
+document.querySelector('#menu').onclick = () => {
+    navbar.classList.toggle('active');
+    searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
 }
 
-@media (max-width: 1200px) {
-  .container .post-box .post-img-hw {
-    width: 100%;
-  }
+//remove
+window.click = () => {
+    searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+```
 
-  .container .post-box .post-info-box {
-    width: 100%;
-  }
+<br />
 
-  .container .more-box {
-    width: 100%;
-  }
+아래 코드는 `@media`의 전체 코드 입니다.
+
+```css
+
+@media screen and(max-width: 1200px) {
 
   .carousel-intro h2 {
     font-size: 35px;
@@ -372,7 +379,8 @@ Our Memories는 `@media` 기능을 사용하여 반응형 웹으로 구현하였
   }
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
+
   html {
     font-size: 10px;
   }
@@ -380,18 +388,6 @@ Our Memories는 `@media` 기능을 사용하여 반응형 웹으로 구현하였
   header .navbar a {
     margin: 5px 10px;
     font-size: 15px;
-  }
-
-  .container .post-box .post-img-hw {
-    width: 100%;
-  }
-
-  .container .post-box .post-info-box {
-    width: 100%;
-  }
-
-  .container .more-box {
-    width: 100%;
   }
 
   .carousel-intro h2 {
@@ -403,7 +399,7 @@ Our Memories는 `@media` 기능을 사용하여 반응형 웹으로 구현하였
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   header .navbar2 #menu {
     display: inline-block;
@@ -439,18 +435,6 @@ Our Memories는 `@media` 기능을 사용하여 반응형 웹으로 구현하였
     display: block;
   }
 
-  .container .post-box .post-img-hw {
-    width: 100%;
-  }
-
-  .container .post-box .post-info-box {
-    width: 580px;
-  }
-
-  .container .more-box {
-    width: 580px;
-  }
-
   .carousel-intro h2 {
     font-size: 20px;
   }
@@ -460,19 +444,7 @@ Our Memories는 `@media` 기능을 사용하여 반응형 웹으로 구현하였
   }
 }
 
-@media (max-width: 576px) {
-  .container .post-box .post-img-hw {
-    width: 100%;
-  }
-
-  .container .post-box .post-info-box {
-    width: 440px;
-  }
-
-  .container .more-box {
-    width: 440px;
-  }
-
+@media screen and (max-width: 576px) {
 
   .carousel-intro h2 {
     font-size: 18px;
@@ -483,18 +455,7 @@ Our Memories는 `@media` 기능을 사용하여 반응형 웹으로 구현하였
   }
 }
 
-@media (max-width: 200px) {
-  .container .post-box .post-img-hw {
-    width: 100%;
-  }
-
-  .container .post-box .post-info-box {
-    width: 100%;
-  }
-
-  .container .more-box {
-    width: 100%;
-  }
+@media screen and (max-width: 200px) {
 
   .carousel-intro {
     width: 100%;
@@ -507,7 +468,6 @@ Our Memories는 `@media` 기능을 사용하여 반응형 웹으로 구현하였
   .carousel-intro p {
     font-size: 15px;
   }
-
 }
 ```
 
@@ -515,3 +475,11 @@ Our Memories는 `@media` 기능을 사용하여 반응형 웹으로 구현하였
 <br />
 
 > ## Search
+
+<br />
+
+<img src="https://user-images.githubusercontent.com/75716255/137592230-8f400839-46cf-4f1e-b4e3-8925d0fb603d.gif" width="100%">
+
+<br />
+
+
