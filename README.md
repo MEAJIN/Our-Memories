@@ -97,13 +97,9 @@
 
 <br />
 
-<img src="https://user-images.githubusercontent.com/75716255/137490549-a1d3a3e1-5edf-49a1-bd5f-fbbad30d91bd.gif" width="100%">
-
-<br />
-
 - `Bootstrap`에서 제공하는 [`Carousel`](https://getbootstrap.com/docs/4.4/components/carousel/) 사용
 
-- Carousel 클릭 시 해당 게시글로 이동
+
 
 - `Carousel`은 모든 사용자를 포함하여 가장 최근에 등록 된 5개의 게시글 정보를 가져옴 (⭐추후 구현 예정)
 
@@ -113,12 +109,11 @@
 
 <br />
 
-```css
-.carousel-item {
-  height: 100vh;
-  width: 100vw;
-  }
-```
+- Carousel 클릭 시 해당 게시글로 이동
+
+<img src="https://user-images.githubusercontent.com/75716255/137490549-a1d3a3e1-5edf-49a1-bd5f-fbbad30d91bd.gif" width="100%">
+
+<br />
 
 - `Carousel`은 '추억들(memories)' 이라는 주제를 가장 잘 나타내 주는 요소(element)이기 때문에 가시성에 초점을 두는 방향으로 진행함
 
@@ -127,6 +122,13 @@
     - `viewport`의 `height`와 `width` 값에 근거하여 측정되는 단위인 `vh`와 `vw` 를 사용
     -  `퍼센트(%)`를 사용하게 되면 가장 가까운 부모 요소에 상대 적인 영향을 받기 때문에 사용하지 않음
 
+```css
+.carousel-item {
+  height: 100vh;
+  width: 100vw;
+  }
+```
+
 <br />
 <br />
 
@@ -134,7 +136,19 @@
 
 <br />
 
-네비게이션바의 'Our' 항목은 저와 제 친구들을 소개하는 프로필 카드로 구성되어 있습니다. 기본 형태는 프로필 사진만 보이도록 되어 있으나,  `:hover` 효과를 사용하여 오버 시 프로필 카드에 해당하는 사람에 대한 정보가 보여지도록 구성하였습니다.  `:hover` 효과를 통해 보여지는 정보는 프로필 사진, 생년월일, 이름, 직업, 개인 사이트(깃, 블로그, 인스타그램)가 있습니다.  또한, 각 카드에 자신만의 포인트를 주기 위해 직업과 관련된 이미지를 카드 배경으로 지정해주었습니다.
+- 자신을 소개하는 프로필 카드
+
+  - 각 카드에 자신만의 포인트를 주기 위해 직업과 관련된 이미지를 카드 배경으로 지정
+  
+  - 형태
+  
+    - 기본 형태 : 프로필 사진만 보임
+  
+    - 마우스 오버 시 : 카드에 해당하는 사람에 대한 정보 표시 (`:hover`사용)
+
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137599559-501e173f-d3a8-4cb2-8b50-3152279ac659.png" width="15%"></p>
+
+<br />
 
 <img src="https://user-images.githubusercontent.com/75716255/137509705-7b7479ac-e349-4aaa-b082-5a750495ea57.gif" width="100%">
 
@@ -238,13 +252,14 @@
  
 <br />
 
-네비게이션바의 'Memories' 항목은 `Carousel`과 마찬가지로 모든 사용자를 포함하여 가장 최근에 등록 된 5개의 게시글 리스트가 나열되며, 리스트를 클릭하면 해당 게시글로 이동됩니다. (⭐추후 구현 예정)
-
 <img src="https://user-images.githubusercontent.com/75716255/137522592-ac722638-8a04-4963-a78c-e8daecd93f76.gif" width="100%">
 
 <br />
 
-초기의 `:hover` 효과는 게시글 리스트에 마우스를 오버 했을 경우 `scale`을 사용하여 리스트가 확대 되는 효과를 줬었습니다. 그러나 너무 뜬금없다는 느낌이 강하게 들어 `box-shadow` 값을 좀 더 진하게 주어 마우스 오버 시, 게시글 리스트를 강조 하는 방향으로 코드를 수정하였습니다. 
+- 모든 사용자를 포함하여 가장 최근에 등록 된 5개의 게시글 리스트가 나열 됨 (⭐추후 구현 예정)
+- 리스트를 클릭하면 해당 게시글로 이동 (⭐추후 구현 예정)
+
+<br />
 
 ```css
 /* 기본 박스 그림자 값 */
@@ -257,6 +272,11 @@
   box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
 }
 ```
+
+- `:hover`
+
+  - 초기 : `scale`을 사용하여 리스트 확대 효과를 줌
+  - 현재 : `box-shadow` 값을 진하게 주어 게시글 리스트를 강조
 
 <br />
 
