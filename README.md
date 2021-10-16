@@ -97,7 +97,7 @@
 
 <br />
 
-메뉴의 'Home' 항목은 `Bootstrap`에서 제공하는 [`Carousel`](https://getbootstrap.com/docs/4.4/components/carousel/)을 사용하여 이미지 및 텍스트 슬라이드쇼 기능을 넣었습니다.  `Carousel`은 모든 사용자를 포함하여 가장 최근에 등록 된 5개의 게시글 정보(제목, 부제목, 메인 이미지)를 불러와 메인 화면에 띄워주며, 클릭하면 해당 게시글로 이동합니다. (JS 학습 후 앞에서 제시한 기능을 구현함과 동시에 5개로 간추릴 예정입니다.) (⭐추후 구현 예정)
+네비게이션바의 'Home' 항목은 `Bootstrap`에서 제공하는 [`Carousel`](https://getbootstrap.com/docs/4.4/components/carousel/)을 사용하여 이미지 및 텍스트 슬라이드쇼 기능을 넣었습니다.  `Carousel`은 모든 사용자를 포함하여 가장 최근에 등록 된 5개의 게시글 정보(제목, 부제목, 메인 이미지)를 불러와 메인 화면에 띄워주며, 클릭하면 해당 게시글로 이동합니다. (JS 학습 후 앞에서 제시한 기능을 구현함과 동시에 5개로 간추릴 예정입니다.) (⭐추후 구현 예정)
 
 <img src="https://user-images.githubusercontent.com/75716255/137490549-a1d3a3e1-5edf-49a1-bd5f-fbbad30d91bd.gif" width="100%">
 
@@ -119,7 +119,7 @@
 
 <br />
 
-메뉴의 'Our' 항목은 저와 제 친구들을 소개하는 프로필 카드로 구성되어 있습니다. 기본 형태는 프로필 사진만 보이도록 되어 있으나,  `:hover` 효과를 사용하여 오버 시 프로필 카드에 해당하는 사람에 대한 정보가 보여지도록 구성하였습니다.  `:hover` 효과를 통해 보여지는 정보는 프로필 사진, 생년월일, 이름, 직업, 개인 사이트(깃, 블로그, 인스타그램)가 있습니다.  또한, 각 카드에 자신만의 포인트를 주기 위해 직업과 관련된 이미지를 카드 배경으로 지정해주었습니다.
+네비게이션바의 'Our' 항목은 저와 제 친구들을 소개하는 프로필 카드로 구성되어 있습니다. 기본 형태는 프로필 사진만 보이도록 되어 있으나,  `:hover` 효과를 사용하여 오버 시 프로필 카드에 해당하는 사람에 대한 정보가 보여지도록 구성하였습니다.  `:hover` 효과를 통해 보여지는 정보는 프로필 사진, 생년월일, 이름, 직업, 개인 사이트(깃, 블로그, 인스타그램)가 있습니다.  또한, 각 카드에 자신만의 포인트를 주기 위해 직업과 관련된 이미지를 카드 배경으로 지정해주었습니다.
 
 <img src="https://user-images.githubusercontent.com/75716255/137509705-7b7479ac-e349-4aaa-b082-5a750495ea57.gif" width="100%">
 
@@ -223,7 +223,7 @@
  
 <br />
 
-메뉴의 'Memories' 항목은 `Carousel`과 마찬가지로 모든 사용자를 포함하여 가장 최근에 등록 된 5개의 게시글 리스트가 나열되며, 리스트를 클릭하면 해당 게시글로 이동됩니다. (⭐추후 구현 예정)
+네비게이션바의 'Memories' 항목은 `Carousel`과 마찬가지로 모든 사용자를 포함하여 가장 최근에 등록 된 5개의 게시글 리스트가 나열되며, 리스트를 클릭하면 해당 게시글로 이동됩니다. (⭐추후 구현 예정)
 
 <img src="https://user-images.githubusercontent.com/75716255/137522592-ac722638-8a04-4963-a78c-e8daecd93f76.gif" width="100%">
 
@@ -277,7 +277,7 @@
 
 <br />
 
-메뉴의 'Record' 항목은 게시글을 작성 할 수 있도록 `form`을 사용하여 구현하였습니다. 사용된 태그는 `input`, `textarea` 입니다. 제목, 부제목, 내용 중 단 하나라도 입력 한 값이 없으면 등록 버튼의 `submit`이 요청되지 않도록 위의 세 항목에 `required` 값을 주었습니다. 
+네비게이션바의 'Record' 항목은 게시글을 작성 할 수 있도록 `form`을 사용하여 구현하였습니다. 사용된 태그는 `input`, `textarea` 입니다. 제목, 부제목, 내용 중 단 하나라도 입력 한 값이 없으면 등록 버튼의 `submit`이 요청되지 않도록 위의 세 항목에 `required` 속성을 주었고, `placeholder` 속성을  필드에 사용자가 적절한 값을 입력 할 수 있도록 도움말을 명시하였습니다.
 
 또한, 게시글 작성 중 특정 상황을 대비하여 게시글 초기화 버튼을 같이 구현해 놓았습니다. 초기화 버튼과 등록 버튼은 클릭 직전의 순간 까지 서로 헷갈리지 않게끔 하기 위해 `:hover` 효과를 사용하여 마우스 오버 시 초기화 버튼은 '🟥붉은색'으로, 등록 버튼은 '🟩녹색'으로 변하는 효과를 주었습니다.
 
@@ -316,6 +316,150 @@
 ```
 
 <br />
+<br />
+
+> ## Search
+
+<br />
+
+네비게이션바의 Search 항목은 찾고자 하는 컨텐츠의 키워드를 입력 시 관련 컨텐츠를 리스트로 출력해줍니다(⭐추후 구현 예정). 검색이라는 주제에 맞게 돋보기 아이콘을 사용하였고, `scale`을 사용하여 마우스 오버 시 아이콘이 확대 되는 효과를 주었습니다. 또한, 검색창이 활성화 된 상태일 경우 검색창 내부의 돋보기 아이콘에 마우스 오버시 녹색으로 변하는 효과를 주었습니다. 마지막으로 검색창의 `input` 태그에 `placeholder` 속성을 주어 필드에 사용자가 적절한 값을 입력 할 수 있도록 도움말을 명시하였습니다.
+
+<img src="https://user-images.githubusercontent.com/75716255/137592230-8f400839-46cf-4f1e-b4e3-8925d0fb603d.gif" width="100%">
+
+```html
+
+<form action="" class="search-form">
+  <input type="search" id="search-box" placeholder="이곳에 검색어를 입력해 주세요!">
+  <label for="search-box" class="search-button"></label>
+</form>
+```
+
+```css
+
+header .navbar2 #search:hover,
+header .navbar2 #sign-in:hover {
+  transform: scale(1.4);
+}
+```
+
+<br />
+
+검색 버튼의 경우 검색창 활성/비활성 이벤트 동작을 위해 `onclick` 속성을 사용하였습니다. 따라서, 자바스크립트의 `toggle()`메서드를 사용하였고 변수는 재사용이 필요 없기 때문에 `const`로 선언하였습니다. 검색창이 활성화 되어 있는 동안은 다른 클래스와 동작이 겹치지 않도록 `remove()` 메서드를 사용하여 메뉴 버튼 이외의 클래스는 값을 제거해주었습니다. 또한, 자바스크립트로는 단순히 검색창을 활성/비활성 하는 기능만 구현이 가능 하기 때문에 CSS3의 `transition`을 사용하여 부드러운 애니메이션 효과를 주었습니다.
+
+```css
+
+header .search-form {
+  position: absolute;
+  top: 110%;
+  right: -110%; /* 비활성일 때 위치 */
+  width: 500px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: .5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+  border-radius: 5px;
+}
+
+header .search-form.active {
+  right: 10px; /* 활성 시 위치 */
+  transition: .2s linear;
+}
+```
+
+```js
+
+// search
+const searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search').onclick = () => {
+    searchForm.classList.toggle('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+//remove
+window.click = () => {
+    searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+```
+
+<br />
+<br />
+
+> ## Login
+
+네비게이션바의 Login 항목은 로그인, 로그아웃, 비밀번호 찾기, 회원가입 기능을 제공합니다(⭐추후 구현 예정). 로그인 아이콘은 대중적으로 많이 사용되고 있는 사람 형태의 아이콘을 사용하였습니다. 이는 검색 버튼과 마찬가지로 `scale`을 사용하여 마우스 오버 시 아이콘이 확대 되는 효과를 주었습니다. 아이디 입력은 이메일 형식만 가능하며, 올바른 이메일 형식이 아닐경우 경고 메세지가 출력되어 올바른 이메일 형식 입력을 유도합니다. 또한, `input` 태그에 `placeholder` 속성을 주어 필드에 사용자가 적절한 값을 입력 할 수 있도록 도움말을 명시하였습니다.
+
+<img src="Honeycam 2021-10-17 00-09-24](https://user-images.githubusercontent.com/75716255/137592534-77692a66-da77-4628-ab39-c3cd9f6206ec.gif" width="100%">
+
+```html
+
+<form action="" class="login-form">
+  <h3>our memories login</h3>
+  <input type="email" placeholder="email" class="login-box">
+  <input type="password" placeholder="password" class="login-box">
+  <input type="submit" placeholder="submit" value="login" class="btn">
+  <P class="click-m">forget your password <a href="#">click here</a></P>
+  <P>don't have an account <a href="#">create now</a></P>
+</form>
+```
+
+```css
+
+header .navbar2 #search:hover,
+header .navbar2 #sign-in:hover {
+  transform: scale(1.4);
+}
+```
+
+로그인 아이콘의 경우 로그인창 활성/비활성 이벤트 동작을 위해 `onclick` 속성을 사용하였습니다. 따라서, 자바스크립트의 `toggle()`메서드를 사용하였고 변수는 재사용이 필요 없기 때문에 `const`로 선언하였습니다. 검색창이 활성화 되어 있는 동안은 다른 클래스와 동작이 겹치지 않도록 `remove()` 메서드를 사용하여 메뉴 버튼 이외의 클래스는 값을 제거해주었습니다. 또한, 자바스크립트로는 단순히 검색창을 활성/비활성 하는 기능만 구현이 가능 하기 때문에 CSS3의 `transition`을 사용하여 부드러운 애니메이션 효과를 주었습니다.
+
+```css
+
+header .login-form {
+  position: absolute;
+  top: 110%;
+  right: -110%; /* 비활성 시 위치 */
+  width: 400px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+  padding: 20px;
+  border-radius: 5px;
+  background: #ffffff;
+  text-align: center;
+}
+
+header .login-form.active {
+  right: 10px; /* 활성 시 위치 */
+  transition: .2s linear;
+}
+```
+
+```js
+
+//login
+const loginForm = document.querySelector('.login-form');
+
+document.querySelector('#sign-in').onclick = () => {
+    loginForm.classList.toggle('active');
+    searchForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+//remove
+window.click = () => {
+    searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+```
+
+<br />
+<br />
 
 ## @media
 
@@ -333,7 +477,7 @@ Our Memories는 `@media` 기능을 사용하여 반응형 웹으로 구현하였
 
 <br />
 
-메뉴 버튼의 경우 `onclick` 속성을 사용하여 메뉴를 접고 펼칠 수 있도록 구현하였습니다. 따라서, 자바스크립트의 `toggle()`메서드를 사용하였고 변수는 재사용이 필요 없기 때문에 `const`로 선언하였습니다. 메뉴 버튼이 활성화 되어 있는 동안은 다른 클래스와 동작이 겹치지 않도록 `remove()` 메서드를 사용하여 메뉴 버튼 이외의 클래스는 값을 제거해주었습니다. 또한, 자바스크립트로는 단순히 메뉴를 접고 펼치는 기능만 구현이 가능 하기 때문에 CSS3의 `transition`을 사용하여 부드러운 애니메이션 효과를 주었습니다.
+메뉴 버튼의 경우 메뉴를 접고 펼치는 이벤트 동작을 위해 `onclick` 속성을 사용하였습니다. 따라서, 자바스크립트의 `toggle()`메서드를 사용하였고 변수는 재사용이 필요 없기 때문에 `const`로 선언하였습니다. 메뉴 버튼이 활성화 되어 있는 동안은 다른 클래스와 동작이 겹치지 않도록 `remove()` 메서드를 사용하여 메뉴 버튼 이외의 클래스는 값을 제거해주었습니다. 또한, 자바스크립트로는 단순히 메뉴를 접고 펼치는 기능만 구현이 가능 하기 때문에 CSS3의 `transition`을 사용하여 부드러운 애니메이션 효과를 주었습니다.
 
 ```css
 
@@ -474,12 +618,6 @@ window.click = () => {
 <br />
 <br />
 
-> ## Search
 
-<br />
-
-<img src="https://user-images.githubusercontent.com/75716255/137592230-8f400839-46cf-4f1e-b4e3-8925d0fb603d.gif" width="100%">
-
-<br />
 
 
