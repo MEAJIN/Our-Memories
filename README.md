@@ -103,7 +103,9 @@
 
 - `Carousel`은 모든 사용자를 포함하여 가장 최근에 등록 된 5개의 게시글 정보를 가져옴 (⭐추후 구현 예정)
 
-<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137599029-09665b71-eff9-40c1-aa4e-3485fa558d0c.png" width="20%"></p>
+<br />
+
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137599135-759f5f6f-4131-4057-90e3-a853059dd75b.png" width="20%"></p>
 
 - Carousel 클릭 시 해당 게시글로 이동
 
