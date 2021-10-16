@@ -99,15 +99,11 @@
 
 <img src="https://user-images.githubusercontent.com/75716255/137490549-a1d3a3e1-5edf-49a1-bd5f-fbbad30d91bd.gif" width="100%">
 
-<br />
-
 - `Bootstrap`에서 제공하는 [`Carousel`](https://getbootstrap.com/docs/4.4/components/carousel/) 사용
 
 - `Carousel`은 모든 사용자를 포함하여 가장 최근에 등록 된 5개의 게시글 정보를 가져옴 (⭐추후 구현 예정)
-  - 게시글 정보
-    - 제목
-    - 부제목
-    - 내용
+
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137598968-26867316-ab97-4f17-b67f-4b54fc6237ac.png" width="50%"></p>
 
 - Carousel 클릭 시 해당 게시글로 이동
 
