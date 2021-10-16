@@ -508,7 +508,6 @@ p {
 }
 
 .container .post-hover:hover {
-  transform: scale(1.01);
   box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
 }
 
@@ -590,7 +589,7 @@ p {
 }
 
 .container .more-box {
-  width: 90%;
+  width: 100%;
   text-align: right;
   animation: horizontal 0.7s ease-in-out infinite;
 }
@@ -623,7 +622,7 @@ p {
   border-color: transparent transparent transparent black;
 }
 
-/* about */
+/* record */
 .post-record-box .border {
   border-radius: 5px;
 }
@@ -680,11 +679,11 @@ textarea {
   color: #ffffff;
 }
 
-.post-record-box .btn:hover {
+.post-record-box .record-btn-green:hover {
   background: #04B486;
 }
 
-.post-record-box .hred:hover {
+.post-record-box .record-btn-red:hover {
   background: #DF0101;
 }
 
@@ -750,32 +749,7 @@ textarea {
 
 /* @media */
 
-@media (max-width: 1400px) {
-  .container .post-box .post-img-hw {
-    width: 100%;
-  }
-
-  .container .post-box .post-info-box {
-    width: 100%;
-  }
-
-  .container .more-box {
-    width: 100%;
-  }
-}
-
-@media (max-width: 1200px) {
-  .container .post-box .post-img-hw {
-    width: 100%;
-  }
-
-  .container .post-box .post-info-box {
-    width: 100%;
-  }
-
-  .container .more-box {
-    width: 100%;
-  }
+@media screen and(max-width: 1200px) {
 
   .carousel-intro h2 {
     font-size: 35px;
@@ -786,7 +760,8 @@ textarea {
   }
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
+
   html {
     font-size: 10px;
   }
@@ -794,18 +769,6 @@ textarea {
   header .navbar a {
     margin: 5px 10px;
     font-size: 15px;
-  }
-
-  .container .post-box .post-img-hw {
-    width: 100%;
-  }
-
-  .container .post-box .post-info-box {
-    width: 100%;
-  }
-
-  .container .more-box {
-    width: 100%;
   }
 
   .carousel-intro h2 {
@@ -817,7 +780,7 @@ textarea {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   header .navbar2 #menu {
     display: inline-block;
@@ -853,18 +816,6 @@ textarea {
     display: block;
   }
 
-  .container .post-box .post-img-hw {
-    width: 100%;
-  }
-
-  .container .post-box .post-info-box {
-    width: 580px;
-  }
-
-  .container .more-box {
-    width: 580px;
-  }
-
   .carousel-intro h2 {
     font-size: 20px;
   }
@@ -874,19 +825,7 @@ textarea {
   }
 }
 
-@media (max-width: 576px) {
-  .container .post-box .post-img-hw {
-    width: 100%;
-  }
-
-  .container .post-box .post-info-box {
-    width: 440px;
-  }
-
-  .container .more-box {
-    width: 440px;
-  }
-
+@media screen and (max-width: 576px) {
 
   .carousel-intro h2 {
     font-size: 18px;
@@ -897,18 +836,7 @@ textarea {
   }
 }
 
-@media (max-width: 200px) {
-  .container .post-box .post-img-hw {
-    width: 100%;
-  }
-
-  .container .post-box .post-info-box {
-    width: 100%;
-  }
-
-  .container .more-box {
-    width: 100%;
-  }
+@media screen and (max-width: 200px) {
 
   .carousel-intro {
     width: 100%;
@@ -921,5 +849,4 @@ textarea {
   .carousel-intro p {
     font-size: 15px;
   }
-
 }
