@@ -95,20 +95,26 @@
 
 > ### Carousel
 
+<br />
+
+<img src="https://user-images.githubusercontent.com/75716255/137490549-a1d3a3e1-5edf-49a1-bd5f-fbbad30d91bd.gif" width="100%">
+
+<br />
+
 - `Bootstrap`에서 제공하는 [`Carousel`](https://getbootstrap.com/docs/4.4/components/carousel/) 사용
 
 - `Carousel`은 모든 사용자를 포함하여 가장 최근에 등록 된 5개의 게시글 정보를 가져옴
   - 게시글 정보
-    1. 제목
-    2. 부제목
-    3. 내용
+     1. 제목
+     2. 부제목
+     3. 내용
 
 - Carousel 클릭 시 해당 게시글로 이동
 
 - 비고
   - JS 학습 후 앞에서 제시한 기능을 구현함과 동시에 5개로 간추릴 예정 👉 (⭐추후 구현 예정)
 
-<img src="https://user-images.githubusercontent.com/75716255/137490549-a1d3a3e1-5edf-49a1-bd5f-fbbad30d91bd.gif" width="100%">
+
 
 <br />
 
