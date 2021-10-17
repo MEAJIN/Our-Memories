@@ -82,7 +82,7 @@
 - 명칭 작성
   - CSS3 : 파스칼표기법
   - JS : 카멜표기법
-  - Class : 스네이크표기법
+  - Class : 여백 사이에 '-' 표기 (ex. abc-class)
 
 - VScode Formater
   - Beautify
