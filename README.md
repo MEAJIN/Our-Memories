@@ -381,7 +381,7 @@
 <br />
 <br />
 
-> ## Search
+> ### Search
 
 <br />
 
@@ -477,7 +477,7 @@ window.click = () => {
 <br />
 <br />
 
-> ## Login
+> ### Login
 
 <br />
 
@@ -576,7 +576,7 @@ window.click = () => {
 <br />
 <br />
 
-## @media
+> ### @media
 
 <br />
 
@@ -753,6 +753,10 @@ window.click = () => {
 
 <br />
 <br />
+
+## 🤦‍♀️ 겪었던 문제 💢
+
+> ### AOS 사용으로 인한 여백 발생
 
 
 
