@@ -798,7 +798,7 @@ window.click = () => {
 
 <br />
 
-<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137791860-383e71a7-d518-45d0-ae26-d33ebba40850.gif" width="70%"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137791860-383e71a7-d518-45d0-ae26-d33ebba40850.gif" width="70%" height="80%"></p>
 
 <br />
 
