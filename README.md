@@ -756,10 +756,45 @@ window.click = () => {
 
 ## 🤦‍♀️ 겪었던 문제 💢
 
+<br />
+
 > ### AOS 사용으로 인한 여백 발생
 
 <br />
 
+- 특정 해상도 우측에서 여백이 발생
+ 
+<br />
+
 <p align="center"><img src="https://user-images.githubusercontent.com/75716255/137769521-11716608-99e9-4808-a615-5109726265a4.gif" width="70%"></p>
+
+<br />
+
+
+
+<br />
+
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137776743-dd11f3f4-fe16-4335-929e-b7ffc7e621f3.gif" width="70%"></p>
+
+<br />
+
+
+<br />
+
+
+<br />
+<p align="center"><img src="" width="70%"></p>
+
+<br />
+
+
+<br />
+
+
+<br />
+
+
+<br />
+
 
 
