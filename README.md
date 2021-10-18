@@ -762,7 +762,13 @@ window.click = () => {
 
 <br />
 
-- 특정 해상도 우측에서 여백이 발생
+#### 1. 문제 인식 및 이해
+
+<br />
+
+- 특정 해상도일 때 우측 사이드에 여백이 발생함을 확인
+  
+  - 약 992px~1310px 정도
  
 <br />
 
@@ -770,30 +776,69 @@ window.click = () => {
 
 <br />
 
+- 여백으로 인해 `<div>` 정렬 비대칭 문제 발생
+
+  - 해상도마다 여백 너비 차이는 있음
+
+<br />
+
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137776743-dd11f3f4-fe16-4335-929e-b7ffc7e621f3.gif" width="100%"></p>
+
+<br />
+
+- 처음에는 `<header>`에 적용한 `position: fixed;` 속성 때문인 줄 알았음
+
+  - `position: sticky;`로 할 경우 여백 문제가 해결됐기 때문
+
+  - 그러나 `position: fixed;`가 아니었기 때문에 검색/로그인 아이콘을 클릭할 때마다 스크롤이 올라가는 문제 발생
+    
+    - `fixed`는 viewport를 기준으로 한다면, `sticky`는 scroll-box를 기준으로 동작하기 때문 ([참고](https://tech.lezhin.com/2019/03/20/css-sticky))
+
+- 따라서 `position` 문제는 아닐 것 이라는 확신이 듦
+
+<br />
+
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137791860-383e71a7-d518-45d0-ae26-d33ebba40850.gif" width="70%"></p>
+
+<br />
+
+- 다른 원인을 찾아 보던 중, 메뉴의 Our 항목에서 Memories 항목으로 완전히 넘어 갈 때 여백 문제가 해결됨을 확인
+
+<br />
+
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137775298-ae4d9e1a-4de7-40c6-93d3-816610c2b199.gif" width="70%"></p>
+
+<br />
+
+- 개발자 도구를 켜놓고 해당 구간 재확인
+
+  - JS
+
+<br />
+
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137793223-952e615e-93b7-46ce-b15f-273f1de0b6a3.gif"></p>
+
+<br />
+
+#### 2. 정보 수집
+
+
+
+  - `Our`
+
+<br />
 
 
 <br />
 
-<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137776743-dd11f3f4-fe16-4335-929e-b7ffc7e621f3.gif"></p>
-<br />
-
 
 <br />
 
-
-<br />
 <p align="center"><img src="" width="70%"></p>
-
 <br />
 
 
 <br />
 
-
-<br />
-
-
-<br />
-
-
+<p align="center"><img src="" width="70%"></p>
 
