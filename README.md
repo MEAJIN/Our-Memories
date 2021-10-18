@@ -758,6 +758,8 @@ window.click = () => {
 
 > ### AOS 사용으로 인한 여백 발생
 
+<br />
 
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/137769521-11716608-99e9-4808-a615-5109726265a4.gif" width="70%"></p>
 
 
