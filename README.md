@@ -1032,7 +1032,7 @@ body {
 
 <br />
 
-<p align="center"><img src="https://user-images.githubusercontent.com/75716255/138561273-88dd373d-f040-4fed-9541-a7f54ce01f16.png" width="80%"></P>
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/138561268-a34ad3d0-4a31-4532-8007-19832b0d214f.png" width="90%"></P>
 
 <br />
 
