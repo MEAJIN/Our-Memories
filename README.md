@@ -1024,6 +1024,16 @@ body {
   - 🏆 순위 리스트
   - ⏰ 알림기능 (순위 바뀌면 알림 감)
 
+- 🧍‍♀️ 프로필
+
+  - 🛠 프로필 카드를 본인이 직접 추가 또는 수정 가능
+
+  - 예시 도안
+
+<br />
+
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/138561073-9b75662b-5c1d-41a0-a638-6cbbf68fc742.png" width="70%"></P>
+
 <br />
 
 ## 📚 Our-Memories를 위해 공부 해야 할 것
