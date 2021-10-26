@@ -1028,11 +1028,11 @@ body {
 
   - 🛠 프로필 카드를 본인이 직접 추가 또는 수정 가능
 
-    - 예시 도안
+    - 예시 
 
 <br />
 
-<p align="center"><img src="https://user-images.githubusercontent.com/75716255/138877266-e89b7fca-983b-4d5a-95e3-adc079cc6192.png"></P>
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/138878686-5bd12e22-a260-47d7-bddc-5eca54da449c.png"></P>
 
 <br />
 
