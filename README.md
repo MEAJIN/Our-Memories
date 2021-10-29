@@ -972,7 +972,7 @@ body {
 
 - [ ] 각 `@media` 구간에 따른 `font-size` 
 
-- ~~[ ] 모바일 환경 `Carousel` 높이 변경 → 50~80vh 예상~~
+- [ ] ~~모바일 환경 `Carousel` 높이 변경 → 50~80vh 예상~~
 
 - [ ] `SCSS`로 교체
 
