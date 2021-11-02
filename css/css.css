@@ -814,6 +814,10 @@ textarea {
     display: block;
   }
 
+  .carousel-item {
+    height: 60vh;
+  }
+
   .carousel-intro {
     width: 90%;
     white-space: pre-line;
@@ -821,10 +825,12 @@ textarea {
 
   .carousel-intro h2 {
     font-size: 30px;
+    white-space: pre-line;
   }
 
   .carousel-intro p {
     font-size: 20px;
+    white-space: pre-line;
   }
 }
 
@@ -832,13 +838,11 @@ textarea {
 
   .carousel-intro h2 {
     font-size: 20px;
-    width: 90%;
     white-space: pre-line;
   }
 
   .carousel-intro p {
     font-size: 15px;
-    width: 90%;
     white-space: pre-line;
   }
 }
