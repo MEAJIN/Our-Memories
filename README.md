@@ -1,4 +1,4 @@
-# 👩‍👩‍👧‍👧Our Memories🎞
+# 🌟Our Memories🎞
 [![image](https://user-images.githubusercontent.com/75716255/137454401-c9babde1-cd5d-4b9c-a669-8aa1da388636.png)
 ](https://meajin.github.io/Our-Memories/ "클릭! 하시면 홈페이지로 이동됩니다!")
 
@@ -970,7 +970,7 @@ body {
 
 ## 🩺 개선해야 할 부분
 
-- [ ] 각 `@media` 구간에 따른 `font-size` 
+- [x] 각 `@media` 구간에 따른 `font-size` 
 
 - [ ] ~~모바일 환경 `Carousel` 높이 변경 → 50~80vh 예상~~
 
@@ -1041,6 +1041,23 @@ body {
 - SCSS
 - JS
 - React
+
+<br />
+
+# 💡 프로젝트를 하면서 알게된 것
+
+- og tag
+
+- flex / grid
+
+- *::selection
+
+- aos
+
+- scroll-*
+
+- !important
+
 
 <br />
 
