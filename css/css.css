@@ -769,6 +769,10 @@ textarea {
     font-size: 20px;
   }
 
+  .carousel-item {
+    height: 60vh;
+  }
+
   .carousel-intro h2 {
     font-size: 25px;
   }
@@ -776,6 +780,8 @@ textarea {
   .carousel-intro p {
     font-size: 20px;
   }
+
+  
 }
 
 @media (max-width: 768px) {
