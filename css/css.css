@@ -23,7 +23,7 @@ html {
   /* tag : a 의 움직임이 부드러워 짐 */
   scroll-behavior: smooth;
 
-  scroll-snap-type: x proximity;
+  scroll-snap-type: both mandatory;
   scroll-snap-align: center;
 
   /* font-size *2 */
