@@ -763,30 +763,14 @@ textarea {
 
 @media (max-width: 992px) {
 
-  header .navbar a {
-    margin: 5px 10px;
-    font-size: 20px;
+  header {
+    padding: 15px 7%;
   }
 
-  .carousel-intro {
-    width: 90%;
-    white-space: pre-line;
-  }
 
-  .carousel-intro h2 {
+  header .logo {
     font-size: 40px;
-    white-space: pre-line;
   }
-
-  .carousel-intro p {
-    font-size: 35px;
-    white-space: pre-line;
-  }
-
-  
-}
-
-@media (max-width: 768px) {
 
   header .navbar2 #menu {
     display: inline-block;
@@ -798,6 +782,11 @@ textarea {
 
   header .login-form {
     width: 97.5%;
+  }
+
+  header .navbar2 .nav-icon {
+    width: 40px;
+    height: 40px;
   }
 
   header .navbar {
@@ -821,6 +810,31 @@ textarea {
     font-size: 20px;
     display: block;
   }
+
+  header .navbar a {
+    margin: 5px 10px;
+    font-size: 20px;
+  }
+
+  .carousel-intro {
+    width: 90%;
+    white-space: pre-line;
+  }
+
+  .carousel-intro h2 {
+    font-size: 40px;
+    white-space: pre-line;
+  }
+
+  .carousel-intro p {
+    font-size: 35px;
+    white-space: pre-line;
+  }
+
+
+}
+
+@media (max-width: 768px) {
 
   .carousel-intro {
     width: 90%;
