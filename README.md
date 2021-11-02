@@ -972,7 +972,7 @@ body {
 
 - [ ] 각 `@media` 구간에 따른 `font-size` 
 
-- [ ] 모바일 환경 `Carousel` 높이 변경 → 50~80vh 예상
+- [ ] ~~모바일 환경 `Carousel` 높이 변경 → 50~80vh 예상~~
 
 - [ ] `SCSS`로 교체
 
@@ -1028,11 +1028,11 @@ body {
 
   - 🛠 프로필 카드를 본인이 직접 추가 또는 수정 가능
 
-    - 예시 도안
+    - 예시 
 
 <br />
 
-<p align="center"><img src="https://user-images.githubusercontent.com/75716255/138561268-a34ad3d0-4a31-4532-8007-19832b0d214f.png" width="90%"></P>
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/138879257-fcaf90e8-933d-42dc-8dc3-85edc36a7641.png"></P>
 
 <br />
 
