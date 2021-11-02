@@ -229,7 +229,6 @@ header .login-form p a {
   margin-bottom: 100px;
 }
 
-
 .carousel-item {
   height: 100vh;
   width: 100vw;
@@ -769,12 +768,19 @@ textarea {
     font-size: 20px;
   }
 
+  .carousel-intro {
+    width: 90%;
+    white-space: pre-line;
+  }
+
   .carousel-intro h2 {
-    font-size: 25px;
+    font-size: 40px;
+    white-space: pre-line;
   }
 
   .carousel-intro p {
-    font-size: 20px;
+    font-size: 35px;
+    white-space: pre-line;
   }
 
   
@@ -827,7 +833,7 @@ textarea {
   }
 
   .carousel-intro p {
-    font-size: 20px;
+    font-size: 25px;
     white-space: pre-line;
   }
 }
