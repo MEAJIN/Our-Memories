@@ -23,8 +23,8 @@ html {
   /* tag : a 의 움직임이 부드러워 짐 */
   scroll-behavior: smooth;
 
-  scroll-snap-type: both proximity;
-  scroll-snap-align: center;
+  scroll-snap-type: x proximity;
+  scroll-snap-align: none;
 
   /* font-size *2 */
 
@@ -750,7 +750,7 @@ textarea {
 
 /* @media */
 
-@media screen and(max-width: 1200px) {
+@media (max-width: 1200px) {
 
   .carousel-intro h2 {
     font-size: 35px;
@@ -761,7 +761,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
 
   html {
     font-size: 10px;
@@ -781,7 +781,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
   header .navbar2 #menu {
     display: inline-block;
@@ -818,31 +818,35 @@ textarea {
   }
 
   .carousel-intro h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .carousel-intro p {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
 
-
+  .carousel-item {
+    width: 100vw;
+  }
 
   .carousel-intro h2 {
-    font-size: 18px;
+    font-size: 20px;
+    
   }
 
   .carousel-intro p {
     font-size: 15px;
+    
   }
 }
 
-@media screen and (max-width: 200px) {
+@media (max-width: 200px) {
 
-  .carousel-intro {
-    width: 100%;
+  .carousel-item {
+    width: 100vw;
   }
 
   .carousel-intro h2 {
