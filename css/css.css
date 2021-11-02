@@ -229,8 +229,9 @@ header .login-form p a {
   margin-bottom: 100px;
 }
 
+
 .carousel-item {
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   background-size: cover;
   text-align: center;
@@ -298,7 +299,7 @@ header .login-form p a {
   font-size: 40px;
   font-weight: 500;
   color: white;
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
   text-shadow: 1px 1px 2px gray;
 }
 
@@ -763,13 +764,9 @@ textarea {
 
 @media (max-width: 992px) {
 
-  html {
-    font-size: 10px;
-  }
-
   header .navbar a {
     margin: 5px 10px;
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .carousel-intro h2 {
@@ -817,8 +814,13 @@ textarea {
     display: block;
   }
 
+  .carousel-intro {
+    width: 90%;
+    white-space: pre-line;
+  }
+
   .carousel-intro h2 {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .carousel-intro p {
@@ -828,32 +830,23 @@ textarea {
 
 @media (max-width: 576px) {
 
-  .carousel-item {
-    width: 100vw;
-  }
-
   .carousel-intro h2 {
     font-size: 20px;
-    
+    width: 90%;
+    white-space: pre-line;
   }
 
   .carousel-intro p {
     font-size: 15px;
-    
+    width: 90%;
+    white-space: pre-line;
   }
 }
 
 @media (max-width: 200px) {
 
-  .carousel-item {
-    width: 100vw;
+  .carousel-intro {
+    display: none;
   }
 
-  .carousel-intro h2 {
-    font-size: 18px;
-  }
-
-  .carousel-intro p {
-    font-size: 15px;
-  }
 }
