@@ -23,7 +23,7 @@ html {
   /* tag : a 의 움직임이 부드러워 짐 */
   scroll-behavior: smooth;
 
-  scroll-snap-type: both mandatory;
+  scroll-snap-type: both proximity;
   scroll-snap-align: center;
 
   /* font-size *2 */
@@ -818,22 +818,24 @@ textarea {
   }
 
   .carousel-intro h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .carousel-intro p {
-    font-size: 15px;
+    font-size: 25px;
   }
 }
 
 @media screen and (max-width: 576px) {
 
+
+
   .carousel-intro h2 {
-    font-size: 25px;
+    font-size: 18px;
   }
 
   .carousel-intro p {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
