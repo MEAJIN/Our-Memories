@@ -55,7 +55,6 @@ header {
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
-
 header .logo {
   font-family: 'Ephesis', cursive;
   font-size: 35px;
@@ -67,13 +66,20 @@ header .logo:hover {
   color: #000000;
 }
 
-header .navbar a {
+header .navbar .close,
+header .navbar .navbar-in-logo,
+header .navbar .all-bg .sing-in-box,
+header .navbar2 #menu {
+  display: none;
+ }
+
+header .navbar .all-bg .navber-menubtn-box a {
   font-size: 18px;
   margin-left: 50px;
   color: #808080;
 }
 
-header .navbar a:hover {
+header .navbar .all-bg .navber-menubtn-box a:hover {
   color: #000000;
 }
 
@@ -83,19 +89,13 @@ header .navbar2 .nav-icon {
   object-fit: cover;
 }
 
-header .navbar2 #search:hover,
-header .navbar2 #sign-in:hover {
+header .navbar2 #search:hover {
   transform: scale(1.4);
 }
 
 header .navbar2 #menu,
-header .navbar2 #search,
-header .navbar2 #sign-in {
+header .navbar2 #search {
   margin-right: 20px;
-}
-
-header .navbar2 #menu {
-  display: none;
 }
 
 header .search-form {
@@ -103,7 +103,7 @@ header .search-form {
   top: 110%;
   right: -110%;
   width: 500px;
-  height: 50px;
+  height: 70px;
   background: #ffffff;
   border-radius: .5px;
   overflow: hidden;
@@ -151,7 +151,7 @@ header .login-form .login-box {
   margin: 10px 0;
 }
 
-header .login-form.active {
+header .desktopLoginForm.active {
   right: 10px;
   transition: .2s linear;
 }
@@ -170,10 +170,11 @@ header .login-form {
 
 header .login-form h3 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 28px;
   color: #000000;
   text-transform: uppercase;
-  padding: 10px 10px;
+  padding: 15px 10px;
+  margin-bottom: 15px;
 }
 
 header .login-form .login-box {
@@ -181,20 +182,20 @@ header .login-form .login-box {
   background: #eee;
   border-radius: 5px;
   padding: 10px;
-  font-size: 15px;
+  font-size: 18px;
   color: #000000;
   text-transform: none;
   width: 100%;
-  margin: 5px 0;
+  margin: 8px 0;
 }
 
 header .login-form .btn {
-  margin-top: 15px;
+  margin-top: 5px;
   display: inline-block;
   padding: 5px 10px;
   font-size: 20px;
   border-radius: 5px;
-  border: 3px solid #454545;
+  border: 3px solid #000000;
   color: #000000;
   cursor: pointer;
   background: none;
@@ -203,7 +204,7 @@ header .login-form .btn {
 }
 
 header .login-form .btn:hover {
-  background: #454545;
+  background: #000000;
   color: #ffffff;
 }
 
@@ -213,13 +214,18 @@ header .login-form p {
 }
 
 header .login-form .click-m {
-  margin-top: 15px;
+  margin-top: 20px;
   padding-bottom: 3px;
 }
 
 header .login-form p a {
   color: #039;
   text-decoration: underline;
+}
+
+header .login-form.active {
+  right: 10px;
+  transition: .2s linear;
 }
 
 /* 캐러셀 */
@@ -291,7 +297,7 @@ header .login-form p a {
 
 .carousel-intro {
   display: inline-block;
-  
+
 }
 
 .carousel-intro h2 {
@@ -792,7 +798,7 @@ textarea {
   }
 
   header .login-form {
-    width: 97.5%;
+    width: 50%;
   }
 
   header .navbar2 .nav-icon {
@@ -800,32 +806,135 @@ textarea {
     height: 40px;
   }
 
+  header .navbar2 #sign-in {
+    display: none;
+   }
+
   header .navbar {
     position: absolute;
-    top: 110%;
+    top: 0;
     right: -110%;
-    width: 97.5%;
+    height: 100vh;
+    width: 95vw;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
-    border-radius: 5px;
     background: #ffffff;
     display: block;
+    background-color: #ffffff;
+    padding: 0;
   }
 
   header .navbar.active {
-    right: 7px;
+    right: 0;
     transition: .2s linear;
   }
 
-  header .navbar a {
+  header .navClose.active {
+    right: -110%;
+    transition: .2s linear;
+  }
+
+  header .navbar .all-bg .navber-menubtn-box a {
     margin: 5px 10px;
     font-size: 20px;
     display: block;
   }
 
-  header .navbar a {
-    margin: 5px 10px;
-    font-size: 20px;
+  header .navbar .all-bg {
+    height: 100vh;
+    background-color: #eef0f2;
   }
+  
+  header .navbar .top-bg {
+    background: #5f2c82;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+    top: 0;
+    height: 300px;
+    text-align: center;
+  }
+
+  header .navbar .top-bg .menu-box-header {
+    display: flex;
+    padding-top:12px;
+  }
+
+  header .navbar .top-bg .close {
+    display: inline-block;
+    background: none;
+    padding-left: 10px;
+    margin-right: 39%;
+  }
+  
+  header .navbar .top-bg .close img {
+    width: 25px;
+    height: 25px;
+  }
+
+  header .navbar .top-bg .navbar-in-logo {
+    display: inline-block;
+    text-align: flex-start;
+    margin-right: 8px;
+    font-family: 'Ephesis', cursive;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+  }  
+
+  header .navbar .top-bg .sing-in-box {
+    display: block;
+    margin: 30px 40px;
+  }
+
+  header .navbar .top-bg .sing-in-box a {
+    color: white;
+  }
+
+  header .navbar .top-bg .signin-icon-size {
+    display: block;
+    margin: 0 auto;
+    height: 70px;
+    width: 70px;
+  }
+
+  header .navbar .top-bg .sing-in-box .singin-text {
+    display: inline-block;
+    padding-left: 15px;
+    margin: 0 auto;
+  }
+
+  header .navbar .top-bg .sing-in-box .arrow-right2 {
+
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  border-style: solid;
+  border-width: 6px;
+  border-color: transparent transparent transparent white;
+}
+
+  header .navbar .all-bg .navber-menubtn-box {
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 230px;
+    width: 91vw;
+    position: relative;
+    top:-70px;
+    padding: 10px 20px 20px 20px;
+  }
+
+  header .navbar .all-bg .navber-menubtn-box a {
+    padding-top: 10px; 
+    font-size: 20px;
+    color: #000000;
+    border-bottom: 1px solid #eef0f2;
+  }
+  
+  header .navbar .all-bg .navber-menubtn-box a:hover {
+    font-weight: bold;
+  }  
 
   .carousel-intro {
     white-space: pre-line;

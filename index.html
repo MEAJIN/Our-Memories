@@ -6,11 +6,12 @@
   <meta charset="utf-8">
 
   <!-- og tag -->
-  <meta property="og:url"                content="https://meajin.github.io/Our-Memories/" />
-  <meta property="og:type"               content="website" />
-  <meta property="og:title"              content="우리의 추억, Our Memories" />
-  <meta property="og:description"        content="순간의 소중함을 추억으로" />
-  <meta property="og:image"              content="https://user-images.githubusercontent.com/75716255/139940805-1f33a3f8-ece4-4cb5-bc9b-2373368d879c.png" />
+  <meta property="og:url" content="https://meajin.github.io/Our-Memories/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="우리의 추억, Our Memories" />
+  <meta property="og:description" content="순간의 소중함을 추억으로" />
+  <meta property="og:image"
+    content="https://user-images.githubusercontent.com/75716255/139940805-1f33a3f8-ece4-4cb5-bc9b-2373368d879c.png" />
 
 
   <!-- link for using bootstrap -->
@@ -37,27 +38,51 @@
 
     <a class="logo" href="#">Our memories</a>
 
-    <nav class="navbar">
-      <a href="#">home</a>
-      <a href="#our">our</a> <!-- 우리애들 프로필 -->
-      <a href="#Memories">Memories</a><!-- 게시글 리스트 -->
-      <a href="#record">record</a> <!-- 게시글 작성 -->
+    <nav class="navbar nav-close">
+
+      <div class="all-bg">
+
+        <div class="top-bg">
+          <div class="menu-box-header">
+            <button class="close" id="menu-box-close">
+              <img src="/icon/close.png">
+            </button>
+            <span class="navbar-in-logo" href="#">Our memories</span>
+          </div>
+
+          <div class="sing-in-box sign-in">
+            <a href="#sign-in">
+              <img class="signin-icon-size" src="icon/w-sign-in.png" alt="sign-in" title="sign-in">
+              <span class="singin-text">Log in</span>
+              <span class="arrow-right2"></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="navber-menubtn-box">
+          <a href="#">home</a>
+          <a href="#our">our</a> <!-- 우리애들 프로필 -->
+          <a href="#Memories">Memories</a><!-- 게시글 리스트 -->
+          <a href="#record">record</a> <!-- 게시글 작성 -->
+        </div>
+      </div>
       <!-- <a href="#about">about</a> 홈페이지 제작 이유에 대하여 -->
     </nav>
+
     <!-- <div>아이콘 제작자 <a href="" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a></div> -->
     <!-- <div>아이콘 제작자 <a href="https://www.flaticon.com/kr/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a></div> -->
     <!-- <div>아이콘 제작자 <a href="https://www.flaticon.com/kr/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a></div> -->
     <div class="navbar2">
-      <a href="#menu">
-        <img class="nav-icon" id="menu" src="icon/menu.png" alt="menu" title="menu">
-      </a>
-
       <a href="#search">
         <img class="nav-icon" id="search" src="icon/search.png" alt="search" title="search">
       </a>
 
       <a href="#sign-in">
         <img class="nav-icon" id="sign-in" src="icon/sign-in.png" alt="sign-in" title="sign-in">
+      </a>
+
+      <a href="#menu">
+        <img class="nav-icon" id="menu" src="icon/menu.png" alt="menu" title="menu">
       </a>
 
       <!-- <a href="#sign-up">
@@ -399,7 +424,8 @@
                   <span class="user-name">이지은</span>
                 </div>
               </div>
-              <div class="post-helper"></div><div class="post-info-box">
+              <div class="post-helper"></div>
+              <div class="post-info-box">
                 <h2>세상 평화로운 하늘, 나는 이걸 '세평하'라고 부르기로 했다 ☁</h2>
                 <span>사실 내가 찍은 건 아니고, 이지은이 보내준 사진이다. 히히</span>
               </div>
@@ -415,6 +441,7 @@
                   <span class="user-name">이소미</span>
                 </div>
               </div>
+              <div class="post-helper"></div>
               <div class="post-info-box">
                 <h2>척척학사를 넘어 '척척석사'가 되려는 이소미의 여정을 담았다 🏃‍♀️</h2>
                 <span>과연 그녀는 성공 할 것 인가?</span>
@@ -431,6 +458,7 @@
                   <span class="user-name">현지원</span>
                 </div>
               </div>
+              <div class="post-helper"></div>
               <div class="post-info-box">
                 <h2>한강만 가면 치맥이 땡기는 이유가 뭐죠‍?</h2>
                 <span>🍺 그건모르겠고, 그냥 나랑 치맥 고고여 🍗 @사진 저작자 : 현지원</span>
@@ -447,6 +475,7 @@
                   <span class="user-name">김혜진</span>
                 </div>
               </div>
+              <div class="post-helper"></div>
               <div class="post-info-box">
                 <h2>숨은 한옥 찾기‍</h2>
                 <span class="info">찾으면 현지원이 삼겹살 쏜다는데?</span>
