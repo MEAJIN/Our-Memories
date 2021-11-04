@@ -89,7 +89,8 @@ header .navbar2 .nav-icon {
   object-fit: cover;
 }
 
-header .navbar2 #search:hover {
+header .navbar2 #search:hover,
+header .navbar2 #sign-in:hover {
   transform: scale(1.4);
 }
 
