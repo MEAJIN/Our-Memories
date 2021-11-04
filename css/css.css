@@ -515,7 +515,7 @@ p {
 }
 
 .container .post-box .post-img-hw {
-  height: 200px;
+  height: 250px;
   width: 100%;
   background-size: cover;
 }
@@ -540,15 +540,23 @@ p {
   background-position: center center;
 }
 
+.post-helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
 .container .post-box .post-info-box {
-  height: 50%;
   width: 100%;
   padding: 15px;
   background: #FAFAFA;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .container .post-box .post-info-box h2 {
   font-size: 20px;
+  padding-bottom: 5px;
   overflow: hidden;
 
   /* 텍스트가 길어져도 줄바꿈 되지 않고 한 줄에 입력 */
@@ -559,6 +567,7 @@ p {
 
   font-weight: bold;
   margin: 0;
+
 }
 
 .container .post-box .post-info-box span {
@@ -830,14 +839,20 @@ textarea {
     font-size: 30px;
   }
 
+  .container .post-box .post-img-hw {
+    height: 280px;
+  }
 
+  .container .post-box .post-info-box h2 {
+    font-size: 23px;
+  }
+
+  .container .post-box .post-info-box span {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 768px) {
-
-  .carousel-intro {
-    white-space: pre-line;
-  }
 
   .carousel-intro h2 {
     font-size: 30px;
@@ -846,13 +861,14 @@ textarea {
   .carousel-intro p {
     font-size: 25px;
   }
+
+  .container .post-box .post-img-hw {
+    height: 280px;
+  }
+
 }
 
 @media (max-width: 576px) {
-
-  .carousel-intro {
-    white-space: pre-line;
-  }
 
   .carousel-intro h2 {
     font-size: 25px;
@@ -860,6 +876,10 @@ textarea {
 
   .carousel-intro p {
     font-size: 20px;
+  }
+
+  .container .post-box .post-img-hw {
+    height: 230px;
   }
 }
 
