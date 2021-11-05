@@ -68,6 +68,7 @@ header .logo:hover {
 
 header .navbar .close,
 header .navbar .navbar-in-logo,
+header .navbar .navbar-in-logo2,
 header .navbar .all-bg .sing-in-box,
 header .navbar2 #menu {
   display: none;
@@ -152,21 +153,47 @@ header .login-form .login-box {
   margin: 10px 0;
 }
 
-header .desktopLoginForm.active {
-  right: 10px;
-  transition: .2s linear;
-}
-
 header .login-form {
   position: absolute;
-  top: 110%;
-  right: -110%;
-  width: 400px;
+  top: 105%;
+  right: 110%;
+  width: 420px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
-  padding: 20px;
+  padding: 5px 20px 20px 20px;
   border-radius: 5px;
   background: #ffffff;
   text-align: center;
+}
+
+header .login-form.login-form-close-bf {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  align-content: flex-start;
+  background: none;
+  padding:0;
+  box-shadow: none;
+}
+
+header .login-form.login-form-close-bf img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 10px 10px;
+
+}
+
+header .login-form .close {
+  background: white;
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  
+}
+
+header .login-form .close img {
+  width: 20px;
+  height: 20px;
 }
 
 header .login-form h3 {
@@ -174,7 +201,7 @@ header .login-form h3 {
   font-size: 28px;
   color: #000000;
   text-transform: uppercase;
-  padding: 15px 10px;
+  padding: 15px 0;
   margin-bottom: 15px;
 }
 
@@ -225,13 +252,12 @@ header .login-form p a {
 }
 
 header .login-form.active {
-  right: 10px;
+  right: 3px;
   transition: .2s linear;
 }
 
+
 /* 캐러셀 */
-
-
 .carousel-inner {
   margin-bottom: 100px;
 }
@@ -785,7 +811,6 @@ textarea {
     padding: 15px 7%;
   }
 
-
   header .logo {
     font-size: 40px;
   }
@@ -798,8 +823,9 @@ textarea {
     width: 97.5%;
   }
 
-  header .login-form {
-    width: 50%;
+  header .login-form.login-form-close-bf {
+    display: block;
+    width: 100px;
   }
 
   header .navbar2 .nav-icon {
@@ -816,7 +842,7 @@ textarea {
     top: 0;
     right: -110%;
     height: 100vh;
-    width: 95vw;
+    width: 85vw;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
     background: #ffffff;
     display: block;
@@ -826,11 +852,6 @@ textarea {
 
   header .navbar.active {
     right: 0;
-    transition: .2s linear;
-  }
-
-  header .navClose.active {
-    right: -110%;
     transition: .2s linear;
   }
 
@@ -851,34 +872,33 @@ textarea {
     background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       
     top: 0;
-    height: 300px;
+    height: 350px;
     text-align: center;
   }
 
   header .navbar .top-bg .menu-box-header {
     display: flex;
-    padding-top:12px;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 20px 20px 0 20px;
   }
 
   header .navbar .top-bg .close {
     display: inline-block;
     background: none;
-    padding-left: 10px;
-    margin-right: 39%;
   }
   
   header .navbar .top-bg .close img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
   }
 
   header .navbar .top-bg .navbar-in-logo {
     display: inline-block;
-    text-align: flex-start;
-    margin-right: 8px;
+    text-align: left;
+    /* margin-right: 30%; */
     font-family: 'Ephesis', cursive;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 35px;
     color: #ffffff;
   }  
 
@@ -894,36 +914,39 @@ textarea {
   header .navbar .top-bg .signin-icon-size {
     display: block;
     margin: 0 auto;
-    height: 70px;
-    width: 70px;
+    height: 100px;
+    width: 100px;
   }
 
   header .navbar .top-bg .sing-in-box .singin-text {
     display: inline-block;
     padding-left: 15px;
+    font-size: 22px;
+    font-family: 'Telex', sans-serif;
+    font-weight: bold;
     margin: 0 auto;
   }
 
   header .navbar .top-bg .sing-in-box .arrow-right2 {
-
+  margin: 0 auto;
   display: inline-block;
   width: 0;
   height: 0;
-  margin-left: 5px;
   border-style: solid;
   border-width: 6px;
   border-color: transparent transparent transparent white;
 }
 
   header .navbar .all-bg .navber-menubtn-box {
+    display: block;
     margin: 0 auto;
     background-color: #ffffff;
     border-radius: 10px;
-    height: 230px;
-    width: 91vw;
+    height: 250px;
+    width: 90%;
     position: relative;
     top:-70px;
-    padding: 10px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
   }
 
   header .navbar .all-bg .navber-menubtn-box a {
@@ -980,6 +1003,41 @@ textarea {
 
 @media (max-width: 576px) {
 
+  header .navbar .all-bg .navber-menubtn-box a {
+    margin: 5px 10px;
+    font-size: 25px;
+    display: block;
+  }
+
+  header .navbar .top-bg .close {
+    display: inline-block;
+    background: none;
+    padding-left: 10px;
+    margin-right: 35%;
+  }
+  
+  header .navbar .top-bg .navbar-in-logo {
+    font-size: 35px;
+  }  
+
+  header .navbar .top-bg .sing-in-box {
+    display: block;
+    margin: 30px 40px;
+  }
+
+  header .navbar .top-bg .signin-icon-size {
+    height: 100px;
+    width: 100px;
+  }
+
+  header .navbar .top-bg .sing-in-box .singin-text {
+    font-size: 22px;
+  }
+
+  header .navbar .all-bg .navber-menubtn-box a {
+    font-size: 20px;
+  }
+  
   .carousel-intro h2 {
     font-size: 25px;
   }
