@@ -440,7 +440,7 @@ header .search-form {
   top: 110%;
   right: -110%; /* 비활성일 때 위치 */
   width: 500px;
-  height: 50px;
+  height: 70px;
   background: #ffffff;
   border-radius: .5px;
   overflow: hidden;
@@ -458,20 +458,24 @@ header .search-form.active {
 
 ```js
 
-// search
+// search, 검색 버튼 클릭 후 발생 이벤트
 const searchForm = document.querySelector('.search-form');
 
 document.querySelector('#search').onclick = () => {
-    searchForm.classList.toggle('active');
-    loginForm.classList.remove('active');
-    navbar.classList.remove('active');
+  searchForm.classList.toggle('active');
+  loginForm.classList.remove('active');
+  navbar.classList.remove('active');
+  loginFormCloseAf.classList.remove('active');
 }
 
 //remove
 window.click = () => {
-    searchForm.classList.remove('active');
-    loginForm.classList.remove('active');
-    navbar.classList.remove('active');
+  searchForm.classList.remove('active');
+  loginForm.classList.remove('active');
+  navbar.classList.remove('active');
+  close.classList.remove('active');
+  loginFormCloseBtn.classList.remove('active');
+  loginFormCloseAf.classList.remove('active');
 }
 ```
 
@@ -492,22 +496,33 @@ window.click = () => {
 
 - `input` 태그에 `placeholder` 속성을 주어 필드에 사용자가 적절한 값을 입력 할 수 있도록 도움말을 명시
 
+- 21.11.05 로그인 폼에 닫기 버튼 추가
+- 
 <br />
 
 <p align="center"><img src="https://user-images.githubusercontent.com/75716255/137592534-77692a66-da77-4628-ab39-c3cd9f6206ec.gif" width="40%"></p>
+<p align="center">추가 전</p>
+
+<br />
+
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/140456862-3bf40020-ec7f-4a56-ab06-0334ffa6a248.gif" width="40%"></p>
+<p align="center">추가 후</p>
 
 <br />
 
 ```html
 
 <form action="" class="login-form">
-  <h3>our memories login</h3>
-  <input type="email" placeholder="email" class="login-box">
-  <input type="password" placeholder="password" class="login-box">
-  <input type="submit" placeholder="submit" value="login" class="btn">
-  <P class="click-m">forget your password <a href="#">click here</a></P>
-  <P>don't have an account <a href="#">create now</a></P>
-</form>
+      <h3>our memories login</h3>
+      <input type="email" placeholder="email" class="login-box">
+      <input type="password" placeholder="password" class="login-box">
+      <input type="submit" value="login" class="btn">
+      <P class="click-m">forget your password <a href="#">click here</a></P>
+      <P>don't have an account <a href="#">create now</a></P>
+    </form>
+    <button class="login-form-close-btn login-form-close-bf login-form-close-af login-form " id="form-close">
+      <img class="box-close" src="icon/b-close.png">
+    </button>
 ```
 
 ```css
@@ -539,38 +554,72 @@ header .navbar2 #sign-in:hover {
 
 header .login-form {
   position: absolute;
-  top: 110%;
-  right: -110%; /* 비활성 시 위치 */
-  width: 400px;
+  top: 105%;
+  right: 110%;
+  width: 420px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
-  padding: 20px;
+  padding: 5px 20px 20px 20px;
   border-radius: 5px;
   background: #ffffff;
   text-align: center;
 }
 
+header .login-form.login-form-close-bf {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  align-content: flex-start;
+  background: none;
+  padding:0;
+  box-shadow: none;
+}
+
 header .login-form.active {
-  right: 10px; /* 활성 시 위치 */
+  right: 3px;
   transition: .2s linear;
 }
 ```
 
 ```js
 
-//login
+//login-on, 로그인 폼 on
 const loginForm = document.querySelector('.login-form');
 
+document.querySelector('.sign-in').onclick = () => {
+  loginForm.classList.toggle('active');
+  loginFormCloseAf.classList.toggle('active');
+  searchForm.classList.remove('active');
+  navbar.classList.remove('active');
+}
+
+//login-close-btn-on,  로그인 폼 닫기 버튼 활성
+const loginFormCloseBtn = document.querySelector('.login-form-close-btn');
+
 document.querySelector('#sign-in').onclick = () => {
-    loginForm.classList.toggle('active');
-    searchForm.classList.remove('active');
-    navbar.classList.remove('active');
+  loginFormCloseBtn.classList.toggle('active');
+  loginForm.classList.toggle('active');
+  searchForm.classList.remove('active');
+  navbar.classList.remove('active');
+}
+
+//login-form-close, 모든 로그인 폼 닫기 버튼 클릭 > 로그인 폼 off
+const loginFormCloseAf = document.querySelector('.login-form-close-af');
+
+document.querySelector('#form-close').onclick = () => {
+  loginFormCloseAf.classList.remove('active');
+  loginFormCloseBtn.classList.remove('active');
+  loginForm.classList.remove('active');
+  navbar.classList.remove('active');
 }
 
 //remove
 window.click = () => {
-    searchForm.classList.remove('active');
-    loginForm.classList.remove('active');
-    navbar.classList.remove('active');
+  searchForm.classList.remove('active');
+  loginForm.classList.remove('active');
+  navbar.classList.remove('active');
+  close.classList.remove('active');
+  loginFormCloseBtn.classList.remove('active');
+  loginFormCloseAf.classList.remove('active');
 }
 ```
 
@@ -593,11 +642,25 @@ window.click = () => {
 
 - 모바일 환경을 위해 네비게이션바는 메뉴 모양의 버튼 형태로 제작하여 유틸성 확대
   
-  - 단, 메뉴 버튼이 나오는 해상도는 최대 768px
+  - 단, 메뉴 버튼이 나오는 해상도는 최대 992px
+
+- 21.11.05 메뉴 버튼 활성 시 나오는 UI 전면 수정
+
+  - 로그인 아이콘은 메뉴 박스 내부로 이동
+  
+    - 로그인 아이콘 또는 로그인 영문 클릭 시, 로그인 창 활성화
+
+  - 메뉴 박스 좌측 상단에 닫기 버튼 생성 
 
 <br />
 
 <p align="center"><img src="https://user-images.githubusercontent.com/75716255/137526984-cf56cdcd-740d-4547-a643-9815543290ff.gif" width="50%"></p>
+<p align="center">수정 전</p>
+
+<br />
+
+<p align="center"><img src="https://user-images.githubusercontent.com/75716255/140454258-7fef4fca-9495-4719-86f3-156f252e2bf8.gif" width="50%"></p>
+<p align="center">수정 후</p>
 
 <br />
 
@@ -614,32 +677,50 @@ window.click = () => {
    
 - CSS의 `transition`을 사용하여 부드러운 애니메이션 효과 부여
 
+- 
+
 <br />
 
 ```css
 
-header .navbar.active {
-  right: 7px;
-  transition: .2s linear;
-}
+  header .navbar.active {
+    right: 0;
+    transition: .2s linear;
+  }
 ```
 
 ```js
 
-//menu-btn
-let navbar = document.querySelector('.navbar');
+//menu-btn-on, 메뉴 버튼 클릭 후 발생 이벤트
+const navbar = document.querySelector('.navbar');
 
 document.querySelector('#menu').onclick = () => {
-    navbar.classList.toggle('active');
-    searchForm.classList.remove('active');
-    loginForm.classList.remove('active');
+  navbar.classList.toggle('active');
+  searchForm.classList.remove('active');
+  loginForm.classList.remove('active');
+  loginFormCloseBtn.classList.remove('active');
+}
+
+//menu-btn-off, 메뉴 닫기 버튼 클릭 후 발생 이벤트
+const close = document.querySelector('.close');
+
+document.querySelector('#box-close').onclick = () => {
+  close.classList.toggle('active');
+  navbar.classList.remove('active');
+  searchForm.classList.remove('active');
+  loginForm.classList.remove('active');
+  loginFormCloseBtn.classList.remove('active');
+  loginFormCloseAf.classList.remove('active');
 }
 
 //remove
 window.click = () => {
-    searchForm.classList.remove('active');
-    loginForm.classList.remove('active');
-    navbar.classList.remove('active');
+  searchForm.classList.remove('active');
+  loginForm.classList.remove('active');
+  navbar.classList.remove('active');
+  close.classList.remove('active');
+  loginFormCloseBtn.classList.remove('active');
+  loginFormCloseAf.classList.remove('active');
 }
 ```
 
@@ -649,7 +730,9 @@ window.click = () => {
 
 ```css
 
-@media screen and(max-width: 1200px) {
+/* @media */
+
+@media (max-width: 1200px) {
 
   .carousel-intro h2 {
     font-size: 35px;
@@ -660,27 +743,15 @@ window.click = () => {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
 
-  html {
-    font-size: 10px;
+  header {
+    padding: 15px 7%;
   }
 
-  header .navbar a {
-    margin: 5px 10px;
-    font-size: 15px;
+  header .logo {
+    font-size: 40px;
   }
-
-  .carousel-intro h2 {
-    font-size: 25px;
-  }
-
-  .carousel-intro p {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 768px) {
 
   header .navbar2 #menu {
     display: inline-block;
@@ -690,65 +761,240 @@ window.click = () => {
     width: 97.5%;
   }
 
-  header .login-form {
-    width: 97.5%;
+  header .login-form.login-form-close-bf {
+    display: block;
+    width: 100px;
   }
+
+  header .navbar2 .nav-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  header .navbar2 #sign-in {
+    display: none;
+   }
 
   header .navbar {
     position: absolute;
-    top: 110%;
+    top: 0;
     right: -110%;
-    width: 97.5%;
+    height: 100vh;
+    width: 85vw;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
-    border-radius: 5px;
     background: #ffffff;
     display: block;
+    background-color: #ffffff;
+    padding: 0;
   }
 
   header .navbar.active {
-    right: 7px;
+    right: 0;
     transition: .2s linear;
   }
 
-  header .navbar a {
+  header .navbar .all-bg .navber-menubtn-box a {
     margin: 5px 10px;
     font-size: 20px;
     display: block;
   }
 
+  header .navbar .all-bg {
+    height: 100vh;
+    background-color: #eef0f2;
+  }
+  
+  header .navbar .top-bg {
+    background: #5f2c82;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+    top: 0;
+    height: 350px;
+    text-align: center;
+  }
+
+  header .navbar .top-bg .menu-box-header {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 20px 20px 0 20px;
+  }
+
+  header .navbar .top-bg .close {
+    display: inline-block;
+    background: none;
+  }
+  
+  header .navbar .top-bg .close img {
+    width: 30px;
+    height: 30px;
+  }
+
+  header .navbar .top-bg .navbar-in-logo {
+    display: inline-block;
+    text-align: left;
+    /* margin-right: 30%; */
+    font-family: 'Ephesis', cursive;
+    font-size: 35px;
+    color: #ffffff;
+  }  
+
+  header .navbar .top-bg .sing-in-box {
+    display: block;
+    margin: 30px 40px;
+  }
+
+  header .navbar .top-bg .sing-in-box a {
+    color: white;
+  }
+
+  header .navbar .top-bg .signin-icon-size {
+    display: block;
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+  }
+
+  header .navbar .top-bg .sing-in-box .singin-text {
+    display: inline-block;
+    padding-left: 15px;
+    font-size: 22px;
+    font-family: 'Telex', sans-serif;
+    font-weight: bold;
+    margin: 0 auto;
+  }
+
+  header .navbar .top-bg .sing-in-box .arrow-right2 {
+  margin: 0 auto;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px;
+  border-color: transparent transparent transparent white;
+}
+
+  header .navbar .all-bg .navber-menubtn-box {
+    display: block;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 250px;
+    width: 90%;
+    position: relative;
+    top:-70px;
+    padding: 20px 20px 20px 20px;
+  }
+
+  header .navbar .all-bg .navber-menubtn-box a {
+    padding-top: 10px; 
+    font-size: 20px;
+    color: #000000;
+    border-bottom: 1px solid #eef0f2;
+  }
+  
+  header .navbar .all-bg .navber-menubtn-box a:hover {
+    font-weight: bold;
+  }  
+
+  .carousel-intro {
+    white-space: pre-line;
+  }
+
   .carousel-intro h2 {
+    font-size: 35px;
+  }
+
+  .carousel-intro p {
+    font-size: 30px;
+  }
+
+  .container .post-box .post-img-hw {
+    height: 280px;
+  }
+
+  .container .post-box .post-info-box h2 {
+    font-size: 23px;
+  }
+
+  .container .post-box .post-info-box span {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .carousel-intro h2 {
+    font-size: 30px;
+  }
+
+  .carousel-intro p {
+    font-size: 25px;
+  }
+
+  .container .post-box .post-img-hw {
+    height: 280px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  header .navbar .all-bg .navber-menubtn-box a {
+    margin: 5px 10px;
+    font-size: 25px;
+    display: block;
+  }
+
+  header .navbar .top-bg .close {
+    display: inline-block;
+    background: none;
+    padding-left: 10px;
+    margin-right: 35%;
+  }
+  
+  header .navbar .top-bg .navbar-in-logo {
+    font-size: 35px;
+  }  
+
+  header .navbar .top-bg .sing-in-box {
+    display: block;
+    margin: 30px 40px;
+  }
+
+  header .navbar .top-bg .signin-icon-size {
+    height: 100px;
+    width: 100px;
+  }
+
+  header .navbar .top-bg .sing-in-box .singin-text {
+    font-size: 22px;
+  }
+
+  header .navbar .all-bg .navber-menubtn-box a {
+    font-size: 20px;
+  }
+  
+  .carousel-intro h2 {
+    font-size: 25px;
+  }
+
+  .carousel-intro p {
     font-size: 20px;
   }
 
-  .carousel-intro p {
-    font-size: 15px;
+  .container .post-box .post-img-hw {
+    height: 230px;
   }
 }
 
-@media screen and (max-width: 576px) {
-
-  .carousel-intro h2 {
-    font-size: 18px;
-  }
-
-  .carousel-intro p {
-    font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 200px) {
+@media (max-width: 200px) {
 
   .carousel-intro {
-    width: 100%;
+    display: none;
   }
 
-  .carousel-intro h2 {
-    font-size: 18px;
-  }
-
-  .carousel-intro p {
-    font-size: 15px;
-  }
 }
 ```
 
@@ -972,6 +1218,8 @@ body {
 
 - [x] 각 `@media` 구간에 따른 `font-size` 
 
+  - [ ]  각 `@media` 구간에 따른 `font-size` 및 `div size` (21.11.05 시점으로 재보완 해야 함)
+
 - [ ] ~~모바일 환경 `Carousel` 높이 변경 → 50~80vh 예상~~
 
 - [ ] `SCSS`로 교체
@@ -1081,3 +1329,6 @@ body {
   - `px`을 썼으면 쭉 `px`로 쓰고, `rem`으로 썼으면 `rem`으로 쭉
   - 이래야 나중에 크기 정하기가 쉽다.
 
+- 변수명은 최대한 중복되지 않게. 직관적이게. 이왕이면 비전공자가 봐도 알 수 있도록.
+
+  - 간단한 js 구현 하는 것 조차도 변수명 때문에 굉장히 헷갈려서 무한 삽질을 했다.
