@@ -938,11 +938,11 @@ textarea {
 }
 
   header .navbar .all-bg .navber-menubtn-box {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     background-color: #ffffff;
     border-radius: 10px;
-    height: 250px;
     width: 90%;
     position: relative;
     top:-70px;
@@ -1035,7 +1035,7 @@ textarea {
   }
 
   header .navbar .all-bg .navber-menubtn-box a {
-    font-size: 20px;
+    font-size: 25px;
   }
   
   .carousel-intro h2 {
