@@ -72,7 +72,7 @@ header .navbar .navbar-in-logo2,
 header .navbar .all-bg .sing-in-box,
 header .navbar2 #menu {
   display: none;
- }
+}
 
 header .navbar .all-bg .navber-menubtn-box a {
   font-size: 18px;
@@ -104,7 +104,7 @@ header .search-form {
   position: absolute;
   top: 110%;
   right: -110%;
-  width: 500px;
+  width: 600px;
   height: 70px;
   background: #ffffff;
   border-radius: .5px;
@@ -125,70 +125,55 @@ header .search-form input {
   width: 100%;
   background: none;
   text-transform: none;
-  font-size: 15px;
+  font-size: 18px;
   color: #000000;
   padding: 0 15px;
 }
 
 header .search-form label {
-  font-size: 20px;
-  padding-right: 35px;
+  margin-right: 15px;
   cursor: pointer;
   background: #ffffff url("../icon/search10.png") 0 0 no-repeat;
-  height: 24px;
-  width: 24px;
+  background-size: cover;
+  height: 30px;
+  width: 30px;
 }
 
 header .search-form label:hover {
   background: #ffffff url("../icon/search10-g.png") 0 0 no-repeat;
-  height: 24px;
-  width: 24px;
-}
-
-header .login-form .login-box {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  position: relative;
-  margin: 10px 0;
 }
 
 header .login-form {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 105%;
-  right: 110%;
-  width: 420px;
+  right: -110%;
   box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
-  padding: 5px 20px 20px 20px;
+  padding: 20px;
   border-radius: 5px;
   background: #ffffff;
   text-align: center;
 }
 
 header .login-form.login-form-close-bf {
-  display: flex;
-  justify-content: start;
-  align-items: flex-start;
-  align-content: flex-start;
+  display: block;
   background: none;
-  padding:0;
   box-shadow: none;
 }
 
 header .login-form.login-form-close-bf img {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  margin: 10px 10px;
-
+  width: 30px;
+  height: 30px;
 }
 
+/* 메뉴 닫기 버튼 */
 header .login-form .close {
   background: white;
   height: 50px;
   width: 100px;
   border-radius: 5px;
-  
+
 }
 
 header .login-form .close img {
@@ -197,30 +182,38 @@ header .login-form .close img {
 }
 
 header .login-form h3 {
+  display: block;
+  position: relative;
+  top: 40px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: bold;
   font-size: 28px;
   color: #000000;
   text-transform: uppercase;
-  padding: 15px 0;
-  margin-bottom: 15px;
 }
 
 header .login-form .login-box {
-  margin: 10px 0;
+  display: block;
+  margin: 5px 0;
   background: #eee;
   border-radius: 5px;
-  padding: 10px;
-  font-size: 18px;
+  padding: 18px;
+  font-size: 19px;
   color: #000000;
   text-transform: none;
-  width: 100%;
-  margin: 8px 0;
+  width: 500px;
+
+}
+
+header .login-form .test {
+margin-top: 30px;
 }
 
 header .login-form .btn {
-  margin-top: 5px;
+  margin-top: 15px;
   display: inline-block;
-  padding: 5px 10px;
+  padding: 10px 10px;
   font-size: 20px;
   border-radius: 5px;
   border: 3px solid #000000;
@@ -821,6 +814,21 @@ textarea {
 
   header .search-form {
     width: 97.5%;
+    height: 100%;
+  }
+
+  header .search-form input{
+    font-size: 30px;
+  }
+
+  header .search-form label {
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+  }
+
+  header .search-form input {
+  font-size: 20px;
   }
 
   header .login-form.login-form-close-bf {
@@ -835,7 +843,7 @@ textarea {
 
   header .navbar2 #sign-in {
     display: none;
-   }
+  }
 
   header .navbar {
     position: absolute;
@@ -865,12 +873,15 @@ textarea {
     height: 100vh;
     background-color: #eef0f2;
   }
-  
+
   header .navbar .top-bg {
-    background: #5f2c82;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      
+    background: #5f2c82;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #49a09d, #5f2c82);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     top: 0;
     height: 350px;
     text-align: center;
@@ -887,7 +898,7 @@ textarea {
     display: inline-block;
     background: none;
   }
-  
+
   header .navbar .top-bg .close img {
     width: 30px;
     height: 30px;
@@ -900,7 +911,7 @@ textarea {
     font-family: 'Ephesis', cursive;
     font-size: 35px;
     color: #ffffff;
-  }  
+  }
 
   header .navbar .top-bg .sing-in-box {
     display: block;
@@ -928,14 +939,14 @@ textarea {
   }
 
   header .navbar .top-bg .sing-in-box .arrow-right2 {
-  margin: 0 auto;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 6px;
-  border-color: transparent transparent transparent white;
-}
+    margin: 0 auto;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px;
+    border-color: transparent transparent transparent white;
+  }
 
   header .navbar .all-bg .navber-menubtn-box {
     display: flex;
@@ -945,20 +956,20 @@ textarea {
     border-radius: 10px;
     width: 90%;
     position: relative;
-    top:-70px;
+    top: -70px;
     padding: 20px 20px 20px 20px;
   }
 
   header .navbar .all-bg .navber-menubtn-box a {
-    padding-top: 10px; 
+    padding-top: 10px;
     font-size: 30px;
     color: #000000;
     border-bottom: 1px solid #eef0f2;
   }
-  
+
   header .navbar .all-bg .navber-menubtn-box a:hover {
     font-weight: bold;
-  }  
+  }
 
   .carousel-intro {
     white-space: pre-line;
@@ -1003,6 +1014,20 @@ textarea {
 
 @media (max-width: 576px) {
 
+  header .search-form {
+    height: 80%;
+  }
+
+  header .search-form input{
+    font-size: 20px;
+  }
+
+  header .search-form label {
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+  }
+
   header .navbar .all-bg .navber-menubtn-box a {
     margin: 5px 10px;
     font-size: 25px;
@@ -1015,10 +1040,10 @@ textarea {
     padding-left: 10px;
     margin-right: 35%;
   }
-  
+
   header .navbar .top-bg .navbar-in-logo {
     font-size: 35px;
-  }  
+  }
 
   header .navbar .top-bg .sing-in-box {
     display: block;
@@ -1037,7 +1062,7 @@ textarea {
   header .navbar .all-bg .navber-menubtn-box a {
     font-size: 25px;
   }
-  
+
   .carousel-intro h2 {
     font-size: 25px;
   }
