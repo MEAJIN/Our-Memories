@@ -829,12 +829,7 @@ textarea {
   header .search-form input {
   font-size: 20px;
   }
-
-  header .login-form.login-form-close-bf {
-    display: block;
-    width: 100px;
-  }
-
+  
   header .navbar2 .nav-icon {
     width: 40px;
     height: 40px;
