@@ -1286,8 +1286,8 @@ body {
 
 ## 📚 Our-Memories를 위해 공부 해야 할 것
 
-- SCSS
-- JS
+- SCSS (완)
+- JS (완)
 - React
 
 <br />
